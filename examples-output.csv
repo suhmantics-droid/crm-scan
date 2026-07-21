@@ -1,0 +1,6 @@
+﻿"Company","Domain","CRM","Loyalty","MailHost","Shopify","Unknown","Method"
+"Gymshark","gymshark.com","Mailchimp, Marketo, Oracle Bronto, Braze","","Microsoft","yes","go.shop-production.gymsharkapps.io","page+dns"
+"Allbirds","allbirds.com","Mailchimp, Iterable","","Google","yes","","page+dns"
+"Lush","lush.com","Mailchimp, Listrak","","","","lush.com, demandware.net, _s00398851.autospf.email","dns-only (blocked)"
+"Glossier","glossier.com","","","","yes","","page+dns"
+"Huel","huel.com","","","","yes","","page+dns"

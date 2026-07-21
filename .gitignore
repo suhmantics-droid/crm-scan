@@ -1,0 +1,15 @@
+# Scan output — results contain whatever list you ran, keep them out of the repo
+crm-scan-results.csv
+results.csv
+test-out.csv
+dns-only.csv
+*.log
+
+# Never commit real prospect or client lists
+brands.csv
+input.csv
+/lists/
+
+# OS
+Thumbs.db
+.DS_Store
