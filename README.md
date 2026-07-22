@@ -1,6 +1,6 @@
 # crm-scan
 
-Detect which email platform, loyalty stack and mail host a brand runs — from DNS records and one page fetch.
+Detect which email platform, loyalty stack and mail host a brand runs, from DNS records and one page fetch.
 
 No API keys. No enrichment vendor. No LLM calls. Pure PowerShell.
 
@@ -17,7 +17,7 @@ No API keys. No enrichment vendor. No LLM calls. Pure PowerShell.
 
 I needed the CRM and email platform for 490 retail brands.
 
-The obvious build was AI agents plus a scraping API. I piloted it on ten brands. It cost **532,000 tokens** — roughly **53k per brand**, which projected to about **26 million tokens** for the full list.
+The obvious build was AI agents plus a scraping API. I piloted it on ten brands. It cost **532,000 tokens**, roughly **53k per brand**, which projected to about **26 million tokens** for the full list.
 
 Then I looked at what the agents were actually doing: fetching a page and matching strings against a list of vendor names.
 
@@ -33,16 +33,16 @@ That is the whole idea. Most enrichment problems are lookup problems wearing an 
 
 **An ESP's SPF record is its master sending-IP list.**
 
-When a brand sends marketing email through Klaviyo or Dotdigital, it has to authorise that platform to send on its behalf — publicly, in DNS, forever. So a brand's marketing subdomain quietly announces which platform it runs, to anyone who asks the right question.
+When a brand sends marketing email through Klaviyo or Dotdigital, it has to authorise that platform to send on its behalf: publicly, in DNS, forever. So a brand's marketing subdomain quietly announces which platform it runs, to anyone who asks the right question.
 
-Most people check the apex domain and find nothing useful. Marketing mail almost never sends from the apex. It sends from `email.brand.com`, `news.brand.com`, `mkt.brand.com` — each with its own SPF record.
+Most people check the apex domain and find nothing useful. Marketing mail almost never sends from the apex. It sends from `email.brand.com`, `news.brand.com`, `mkt.brand.com`, each with its own SPF record.
 
 Three record types carry the signal:
 
 | Record | What it reveals |
 |---|---|
 | **SPF** on sending subdomains | The ESP authorised to send |
-| **DKIM** selector CNAMEs | Often the cleanest fingerprint — `k1._domainkey → dkim.mcsv.net` is Mailchimp |
+| **DKIM** selector CNAMEs | Often the cleanest fingerprint. `k1._domainkey → dkim.mcsv.net` is Mailchimp |
 | **DMARC** `rua` address | Frequently names the vendor outright |
 
 ---
@@ -77,11 +77,11 @@ Useful because Microsoft-heavy lists are materially harder to land cold email in
 
 ## It tells you what it doesn't know
 
-The signature tables are not exhaustive, and a scanner that silently drops what it cannot name is worse than useless — it reports a confident blank.
+The signature tables are not exhaustive, and a scanner that silently drops what it cannot name is worse than useless: it reports a confident blank.
 
 Anything that looks like a marketing platform but matches no signature goes into an **`Unknown`** column for a human to read. Generic infrastructure (Google, Microsoft, Cloudflare, SendGrid, DMARC monitors, link shorteners) is filtered out so the column stays short enough to actually review.
 
-This is not a nicety. Building the public version of this tool, a test scan on `gymshark.com` surfaced `bronto.com` and `bm23.com` in that column — **Oracle Bronto, a real ESP with no signature in the table**. It's in the table now. That is the intended loop: the tool finds what it doesn't know, a human confirms it, the signature gets added.
+This is not a nicety. Building the public version of this tool, a test scan on `gymshark.com` surfaced `bronto.com` and `bm23.com` in that column: **Oracle Bronto, a real ESP with no signature in the table**. It's in the table now. That is the intended loop: the tool finds what it doesn't know, a human confirms it, the signature gets added.
 
 ---
 
@@ -122,8 +122,8 @@ From `examples-input.csv`, unedited:
 Brand lists arrive broken. The domain recovery step handles the common shapes:
 
 - Domain sitting in the Company column
-- Raw sending domains — `email.barrheadtravel.co.uk` reduces to `barrheadtravel.co.uk`
-- Duplicates — one real list collapsed **4,394 rows to 1,015 unique domains**, so the scan does 77% less work
+- Raw sending domains: `email.barrheadtravel.co.uk` reduces to `barrheadtravel.co.uk`
+- Duplicates: one real list collapsed **4,394 rows to 1,015 unique domains**, so the scan does 77% less work
 
 On that 490-brand run, domain recovery alone lifted coverage from **67 to 195 brands**. It was worth more than any signature I added.
 
@@ -143,7 +143,7 @@ No result from this tool should enter a system of record without a human reading
 
 ## Scope
 
-Read-only. Public DNS queries and ordinary GET requests — the same traffic any browser makes visiting the site. It does not attempt authentication, does not evade bot protection, and treats a 403 as an answer rather than an obstacle to route around.
+Read-only. Public DNS queries and ordinary GET requests, the same traffic any browser makes visiting the site. It does not attempt authentication, does not evade bot protection, and treats a 403 as an answer rather than an obstacle to route around.
 
 Rate-limit yourself on large lists with `-DelaySeconds`.
 
