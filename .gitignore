@@ -5,6 +5,12 @@ test-out.csv
 dns-only.csv
 *.log
 
+# Transcript output — transcript text belongs to whoever made the video, keep it out of the repo
+/transcripts/
+videos.txt
+*.srt
+*.vtt
+
 # Never commit real prospect or client lists
 brands.csv
 input.csv
