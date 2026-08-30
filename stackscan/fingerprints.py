@@ -67,6 +67,21 @@ def load_db(db_dir=None, categories=None):
     return vendors, labels
 
 
+def bundle_db(db_dir=None):
+    """Combine the category files into one document for the web scanner.
+
+    Vendors pass through untouched so web/app.js reads the same keys the
+    Python engine does. Sorted by display order, same as load_db.
+    """
+    db_dir = Path(db_dir or DEFAULT_DB_DIR)
+    categories = []
+    for path in sorted(db_dir.glob("*.json")):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        categories.append(doc)
+    categories.sort(key=lambda d: d.get("order", 999))
+    return {"source": "fingerprints/", "categories": categories}
+
+
 def validate_db(db_dir=None):
     """Lint the database; returns a list of problem strings (empty = clean)."""
     db_dir = Path(db_dir or DEFAULT_DB_DIR)

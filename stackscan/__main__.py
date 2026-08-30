@@ -10,7 +10,7 @@ from pathlib import Path
 from . import __version__
 from .dns_client import DohResolver, FixtureResolver
 from .engine import resolve_brand_domain, scan_domain
-from .fingerprints import DEFAULT_DB_DIR, load_db, validate_db
+from .fingerprints import DEFAULT_DB_DIR, bundle_db, load_db, validate_db
 from .http_client import FixtureFetcher, HttpFetcher
 from .report import render_console, to_json, write_csv
 
@@ -101,6 +101,13 @@ def cmd_list(args):
         print(f"  {', '.join(names)}")
 
 
+def cmd_bundle(args):
+    out = Path(args.out)
+    out.write_text(json.dumps(bundle_db(args.fingerprints), indent=1) + "\n",
+                   encoding="utf-8")
+    print(f"Written to {out}")
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(
         prog="stackscan",
@@ -136,6 +143,11 @@ def main(argv=None):
     ls = sub.add_parser("list", help="show vendors in the database")
     ls.add_argument("--categories", help="comma-separated category filter")
     ls.set_defaults(func=cmd_list)
+
+    bu = sub.add_parser("bundle",
+                        help="regenerate the web scanner's fingerprint bundle")
+    bu.add_argument("--out", default="web/fingerprints.json")
+    bu.set_defaults(func=cmd_bundle)
 
     args = ap.parse_args(argv)
     if args.command == "scan" and not args.domains and not args.input:

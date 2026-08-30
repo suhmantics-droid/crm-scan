@@ -1,0 +1,1102 @@
+{
+ "source": "fingerprints/",
+ "categories": [
+  {
+   "category": "commerce-platform",
+   "label": "Commerce platform",
+   "order": 10,
+   "vendors": [
+    {
+     "name": "Shopify",
+     "dns": [
+      "myshopify",
+      "shopify"
+     ],
+     "page": [
+      "cdn\\.shopify",
+      "/cdn/shop/",
+      "window\\.shopify"
+     ],
+     "headers": {
+      "powered-by": "shopify",
+      "x-shopid": "\\d",
+      "x-shopify-stage": ".+"
+     },
+     "ip_cidr": [
+      "23.227.32.0/19"
+     ],
+     "notes": "Published IP range catches stores whose homepage is walled off."
+    },
+    {
+     "name": "Salesforce Commerce Cloud",
+     "dns": [
+      "demandware"
+     ],
+     "page": [
+      "demandware",
+      "dwstatic"
+     ]
+    },
+    {
+     "name": "Adobe Commerce (Magento)",
+     "page": [
+      "magento",
+      "mage/requirejs"
+     ]
+    },
+    {
+     "name": "BigCommerce",
+     "dns": [
+      "bigcommerce"
+     ],
+     "page": [
+      "bigcommerce",
+      "cdn11\\.bigcommerce"
+     ]
+    },
+    {
+     "name": "WooCommerce",
+     "page": [
+      "woocommerce"
+     ]
+    },
+    {
+     "name": "Squarespace",
+     "dns": [
+      "squarespace"
+     ],
+     "page": [
+      "static1\\.squarespace",
+      "squarespace\\.com"
+     ]
+    },
+    {
+     "name": "Wix",
+     "dns": [
+      "wixdns",
+      "wix\\.com"
+     ],
+     "page": [
+      "wixstatic",
+      "parastorage"
+     ]
+    },
+    {
+     "name": "Webflow",
+     "dns": [
+      "proxy-ssl\\.webflow",
+      "webflow"
+     ],
+     "page": [
+      "website-files\\.com",
+      "webflow"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "email-marketing",
+   "label": "Email & CRM",
+   "order": 20,
+   "vendors": [
+    {
+     "name": "Klaviyo",
+     "dns": [
+      "klaviyo"
+     ],
+     "page": [
+      "klaviyo"
+     ]
+    },
+    {
+     "name": "Mailchimp",
+     "dns": [
+      "mcsv\\.net",
+      "mailchimp",
+      "list-manage"
+     ],
+     "page": [
+      "mcsv\\.net",
+      "chimpstatic",
+      "list-manage",
+      "mailchimp"
+     ]
+    },
+    {
+     "name": "Salesforce Marketing Cloud",
+     "dns": [
+      "exacttarget",
+      "cust-spf",
+      "mta\\.salesforce",
+      "custdkim\\.salesforce"
+     ],
+     "page": [
+      "exacttarget"
+     ]
+    },
+    {
+     "name": "Bloomreach",
+     "dns": [
+      "exponea",
+      "bloomreach"
+     ],
+     "page": [
+      "bloomreach",
+      "exponea"
+     ]
+    },
+    {
+     "name": "Emarsys",
+     "dns": [
+      "emarsys"
+     ],
+     "page": [
+      "scarabresearch",
+      "emarsys"
+     ]
+    },
+    {
+     "name": "Ometria",
+     "dns": [
+      "ometria"
+     ],
+     "page": [
+      "ometria"
+     ]
+    },
+    {
+     "name": "Sailthru",
+     "dns": [
+      "sailthru"
+     ],
+     "page": [
+      "sailthru"
+     ]
+    },
+    {
+     "name": "Iterable",
+     "dns": [
+      "iterable"
+     ]
+    },
+    {
+     "name": "Marketo",
+     "dns": [
+      "marketo",
+      "mktomail"
+     ],
+     "page": [
+      "marketo",
+      "mktoresp"
+     ]
+    },
+    {
+     "name": "Salesforce Pardot",
+     "dns": [
+      "pardot"
+     ],
+     "page": [
+      "pardot"
+     ]
+    },
+    {
+     "name": "HubSpot",
+     "dns": [
+      "hubspotemail",
+      "hubspot\\.net",
+      "hs-sending"
+     ],
+     "page": [
+      "hubspot",
+      "hs-scripts",
+      "hsforms"
+     ]
+    },
+    {
+     "name": "Oracle Responsys",
+     "dns": [
+      "oracleemaildelivery",
+      "responsys",
+      "rsys\\."
+     ]
+    },
+    {
+     "name": "Oracle Eloqua",
+     "dns": [
+      "eloqua",
+      "elqemail"
+     ],
+     "page": [
+      "eloqua"
+     ]
+    },
+    {
+     "name": "Oracle Bronto",
+     "dns": [
+      "bronto\\.com",
+      "bm23\\.com"
+     ],
+     "notes": "Added after the unknown-vendor catch-all surfaced it on a live scan (gymshark.com)."
+    },
+    {
+     "name": "Adestra",
+     "dns": [
+      "msgfocus"
+     ]
+    },
+    {
+     "name": "SmartFocus",
+     "dns": [
+      "emailvision"
+     ]
+    },
+    {
+     "name": "Customer.io",
+     "dns": [
+      "customeriomail"
+     ],
+     "page": [
+      "customerio"
+     ]
+    },
+    {
+     "name": "Campaign Monitor",
+     "dns": [
+      "cmail\\d",
+      "createsend"
+     ],
+     "page": [
+      "createsend"
+     ]
+    },
+    {
+     "name": "Zoho Campaigns",
+     "dns": [
+      "zcsend"
+     ]
+    },
+    {
+     "name": "Marigold",
+     "dns": [
+      "alterian",
+      "cheetahmail",
+      "cheetahdigital"
+     ]
+    },
+    {
+     "name": "Optimizely Data Platform",
+     "dns": [
+      "epidm\\.net"
+     ]
+    },
+    {
+     "name": "Mapp",
+     "dns": [
+      "m-pages",
+      "\\bmapp\\b"
+     ]
+    },
+    {
+     "name": "Selligent",
+     "dns": [
+      "slgnt\\.eu",
+      "selligent"
+     ]
+    },
+    {
+     "name": "Listrak",
+     "dns": [
+      "listrak"
+     ],
+     "page": [
+      "listrak"
+     ]
+    },
+    {
+     "name": "Dotdigital",
+     "dns": [
+      "dotmailer",
+      "dotdigital",
+      "dmtrk"
+     ],
+     "page": [
+      "dotdigital",
+      "dotmailer",
+      "dmtrk",
+      "trackedlink"
+     ]
+    },
+    {
+     "name": "Braze",
+     "dns": [
+      "braze"
+     ],
+     "page": [
+      "braze",
+      "appboy"
+     ]
+    },
+    {
+     "name": "Cordial",
+     "dns": [
+      "cordial"
+     ],
+     "page": [
+      "cordial"
+     ]
+    },
+    {
+     "name": "Attentive",
+     "dns": [
+      "attentivemobile"
+     ],
+     "page": [
+      "attentivemobile",
+      "attn\\.tv"
+     ]
+    },
+    {
+     "name": "Brevo",
+     "dns": [
+      "sendinblue",
+      "brevo"
+     ],
+     "page": [
+      "sendinblue",
+      "brevo"
+     ]
+    },
+    {
+     "name": "Omnisend",
+     "dns": [
+      "omnisend"
+     ],
+     "page": [
+      "omnisend"
+     ]
+    },
+    {
+     "name": "ActiveCampaign",
+     "dns": [
+      "activecampaign"
+     ],
+     "page": [
+      "activecampaign"
+     ]
+    },
+    {
+     "name": "Ortto",
+     "dns": [
+      "ortto"
+     ],
+     "page": [
+      "ortto"
+     ]
+    },
+    {
+     "name": "Drip",
+     "dns": [
+      "getdrip"
+     ],
+     "page": [
+      "drip\\.com",
+      "getdrip"
+     ]
+    },
+    {
+     "name": "MailerLite",
+     "dns": [
+      "mailerlite"
+     ],
+     "page": [
+      "mailerlite"
+     ]
+    },
+    {
+     "name": "Acoustic",
+     "dns": [
+      "silverpop"
+     ],
+     "page": [
+      "acoustic",
+      "silverpop"
+     ]
+    },
+    {
+     "name": "Voyado",
+     "dns": [
+      "voyado"
+     ],
+     "page": [
+      "voyado"
+     ]
+    },
+    {
+     "name": "Insider",
+     "dns": [
+      "useinsider"
+     ],
+     "page": [
+      "useinsider"
+     ]
+    },
+    {
+     "name": "Wunderkind",
+     "page": [
+      "wunderkind",
+      "bounceexchange"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "loyalty-reviews",
+   "label": "Loyalty & reviews",
+   "order": 30,
+   "vendors": [
+    {
+     "name": "LoyaltyLion",
+     "page": [
+      "loyaltylion"
+     ]
+    },
+    {
+     "name": "Yotpo",
+     "dns": [
+      "yotpo"
+     ],
+     "page": [
+      "yotpo"
+     ]
+    },
+    {
+     "name": "Smile.io",
+     "page": [
+      "smile\\.io"
+     ]
+    },
+    {
+     "name": "Antavo",
+     "dns": [
+      "antavo"
+     ],
+     "page": [
+      "antavo"
+     ]
+    },
+    {
+     "name": "Punchh",
+     "dns": [
+      "punchh"
+     ],
+     "page": [
+      "punchh"
+     ]
+    },
+    {
+     "name": "Okendo",
+     "page": [
+      "okendo"
+     ]
+    },
+    {
+     "name": "Stamped",
+     "page": [
+      "stamped\\.io"
+     ]
+    },
+    {
+     "name": "Rebuy",
+     "page": [
+      "rebuyengine"
+     ]
+    },
+    {
+     "name": "Nosto",
+     "page": [
+      "\\bnosto"
+     ]
+    },
+    {
+     "name": "Klevu",
+     "page": [
+      "klevu"
+     ]
+    },
+    {
+     "name": "Trustpilot",
+     "page": [
+      "trustpilot"
+     ]
+    },
+    {
+     "name": "Reviews.io",
+     "page": [
+      "reviews\\.io",
+      "reviews\\.co\\.uk"
+     ]
+    },
+    {
+     "name": "Feefo",
+     "page": [
+      "feefo"
+     ]
+    },
+    {
+     "name": "Bazaarvoice",
+     "page": [
+      "bazaarvoice"
+     ]
+    },
+    {
+     "name": "PowerReviews",
+     "page": [
+      "powerreviews"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "payments",
+   "label": "Payments & checkout",
+   "order": 40,
+   "vendors": [
+    {
+     "name": "Stripe",
+     "page": [
+      "js\\.stripe\\.com",
+      "m\\.stripe\\.network"
+     ]
+    },
+    {
+     "name": "Braintree",
+     "page": [
+      "braintreegateway",
+      "braintree-api"
+     ]
+    },
+    {
+     "name": "Adyen",
+     "page": [
+      "checkoutshopper",
+      "adyen\\.com"
+     ]
+    },
+    {
+     "name": "PayPal",
+     "page": [
+      "paypal\\.com/sdk",
+      "paypalobjects"
+     ]
+    },
+    {
+     "name": "Square",
+     "page": [
+      "squarecdn",
+      "squareup\\.com"
+     ]
+    },
+    {
+     "name": "Klarna",
+     "page": [
+      "klarna"
+     ]
+    },
+    {
+     "name": "Afterpay",
+     "page": [
+      "afterpay",
+      "clearpay"
+     ]
+    },
+    {
+     "name": "Affirm",
+     "page": [
+      "affirm\\.com/js",
+      "cdn1\\.affirm"
+     ]
+    },
+    {
+     "name": "Recharge",
+     "page": [
+      "rechargepayments",
+      "rechargecdn",
+      "rechargeapps"
+     ]
+    },
+    {
+     "name": "Bolt",
+     "page": [
+      "connect\\.bolt\\.com"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "analytics-cdp",
+   "label": "Analytics & CDP",
+   "order": 50,
+   "vendors": [
+    {
+     "name": "Google Tag Manager",
+     "page": [
+      "googletagmanager\\.com"
+     ]
+    },
+    {
+     "name": "Google Analytics",
+     "page": [
+      "google-analytics\\.com",
+      "gtag/js"
+     ]
+    },
+    {
+     "name": "Segment",
+     "page": [
+      "cdn\\.segment"
+     ]
+    },
+    {
+     "name": "Tealium",
+     "page": [
+      "tiqcdn",
+      "tealium"
+     ]
+    },
+    {
+     "name": "Mixpanel",
+     "page": [
+      "mixpanel",
+      "mxpnl"
+     ]
+    },
+    {
+     "name": "Amplitude",
+     "page": [
+      "cdn\\.amplitude",
+      "amplitude\\.com"
+     ]
+    },
+    {
+     "name": "Hotjar",
+     "page": [
+      "hotjar"
+     ]
+    },
+    {
+     "name": "FullStory",
+     "page": [
+      "fullstory"
+     ]
+    },
+    {
+     "name": "Heap",
+     "page": [
+      "heapanalytics"
+     ]
+    },
+    {
+     "name": "PostHog",
+     "page": [
+      "posthog"
+     ]
+    },
+    {
+     "name": "Snowplow",
+     "page": [
+      "snowplow"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "support",
+   "label": "Support & chat",
+   "order": 60,
+   "vendors": [
+    {
+     "name": "Zendesk",
+     "dns": [
+      "zendesk\\.com"
+     ],
+     "page": [
+      "zdassets",
+      "zendesk"
+     ],
+     "notes": "help.brand.com CNAMEs straight to brand.zendesk.com."
+    },
+    {
+     "name": "Intercom",
+     "page": [
+      "intercom\\.io",
+      "intercomcdn"
+     ]
+    },
+    {
+     "name": "Gorgias",
+     "dns": [
+      "gorgias"
+     ],
+     "page": [
+      "gorgias"
+     ]
+    },
+    {
+     "name": "Freshworks",
+     "dns": [
+      "freshdesk",
+      "freshemail"
+     ],
+     "page": [
+      "freshdesk",
+      "freshworks"
+     ]
+    },
+    {
+     "name": "Drift",
+     "page": [
+      "driftt\\.com",
+      "drift\\.com"
+     ]
+    },
+    {
+     "name": "Crisp",
+     "page": [
+      "crisp\\.chat"
+     ]
+    },
+    {
+     "name": "Kustomer",
+     "page": [
+      "kustomer"
+     ]
+    },
+    {
+     "name": "Gladly",
+     "page": [
+      "gladly\\.com"
+     ]
+    },
+    {
+     "name": "LiveChat",
+     "page": [
+      "livechatinc"
+     ]
+    },
+    {
+     "name": "Tidio",
+     "page": [
+      "tidio"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "mail-infra",
+   "label": "Mail infrastructure",
+   "order": 70,
+   "vendors": [
+    {
+     "name": "Google Workspace",
+     "mx": [
+      "aspmx\\.l\\.google\\.com",
+      "smtp\\.google\\.com",
+      "googlemail\\.com"
+     ],
+     "dns": [
+      "_spf\\.google\\.com",
+      "googlemail"
+     ]
+    },
+    {
+     "name": "Microsoft 365",
+     "mx": [
+      "mail\\.protection\\.outlook\\.com"
+     ],
+     "dns": [
+      "spf\\.protection\\.outlook",
+      "onmicrosoft\\.com",
+      "autodiscover\\.outlook"
+     ],
+     "notes": "MX alone is unreliable behind security gateways; the autodiscover CNAME and onmicrosoft DKIM selectors settle it."
+    },
+    {
+     "name": "SendGrid",
+     "dns": [
+      "sendgrid\\.net"
+     ]
+    },
+    {
+     "name": "Mailgun",
+     "dns": [
+      "mailgun"
+     ]
+    },
+    {
+     "name": "Amazon SES",
+     "dns": [
+      "amazonses"
+     ]
+    },
+    {
+     "name": "Postmark",
+     "dns": [
+      "mtasv\\.net",
+      "postmarkapp"
+     ]
+    },
+    {
+     "name": "Mandrill",
+     "dns": [
+      "mandrill"
+     ]
+    },
+    {
+     "name": "SparkPost",
+     "dns": [
+      "sparkpost"
+     ],
+     "shared": true,
+     "notes": "Shared infrastructure behind several ESPs; suppressed when a named vendor is present."
+    },
+    {
+     "name": "Zoho Mail",
+     "mx": [
+      "zoho"
+     ],
+     "dns": [
+      "zoho\\.com",
+      "zoho\\.eu"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "email-security",
+   "label": "Email security & DMARC",
+   "order": 80,
+   "vendors": [
+    {
+     "name": "Mimecast",
+     "mx": [
+      "mimecast"
+     ],
+     "dns": [
+      "mimecast"
+     ]
+    },
+    {
+     "name": "Proofpoint",
+     "mx": [
+      "pphosted"
+     ],
+     "dns": [
+      "pphosted",
+      "proofpoint"
+     ]
+    },
+    {
+     "name": "Barracuda",
+     "mx": [
+      "barracudanetworks",
+      "ess\\.barracuda"
+     ],
+     "dns": [
+      "barracuda"
+     ]
+    },
+    {
+     "name": "Broadcom MessageLabs",
+     "mx": [
+      "messagelabs"
+     ],
+     "dns": [
+      "messagelabs"
+     ]
+    },
+    {
+     "name": "Valimail",
+     "dns": [
+      "valimail"
+     ],
+     "notes": "DMARC rua addresses frequently name the monitoring vendor outright."
+    },
+    {
+     "name": "dmarcian",
+     "dns": [
+      "dmarcian"
+     ]
+    },
+    {
+     "name": "EasyDMARC",
+     "dns": [
+      "easydmarc"
+     ]
+    },
+    {
+     "name": "Red Sift OnDMARC",
+     "dns": [
+      "ondmarc",
+      "redsift"
+     ]
+    },
+    {
+     "name": "Agari",
+     "dns": [
+      "agari"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "hosting-cdn",
+   "label": "Hosting & CDN",
+   "order": 90,
+   "vendors": [
+    {
+     "name": "Cloudflare",
+     "ns": [
+      "cloudflare\\.com"
+     ],
+     "headers": {
+      "server": "cloudflare"
+     }
+    },
+    {
+     "name": "Fastly",
+     "dns": [
+      "fastly"
+     ],
+     "headers": {
+      "via": "fastly",
+      "x-served-by": "cache-"
+     }
+    },
+    {
+     "name": "Akamai",
+     "dns": [
+      "edgekey",
+      "edgesuite",
+      "akamai"
+     ],
+     "ns": [
+      "akam\\.net"
+     ],
+     "headers": {
+      "server": "akamaighost"
+     }
+    },
+    {
+     "name": "Amazon CloudFront",
+     "dns": [
+      "cloudfront"
+     ],
+     "headers": {
+      "via": "cloudfront",
+      "x-amz-cf-id": ".+"
+     }
+    },
+    {
+     "name": "Vercel",
+     "dns": [
+      "vercel-dns",
+      "vercel\\.app"
+     ],
+     "headers": {
+      "server": "^vercel$",
+      "x-vercel-id": ".+"
+     }
+    },
+    {
+     "name": "Netlify",
+     "dns": [
+      "netlify"
+     ],
+     "headers": {
+      "server": "netlify"
+     }
+    },
+    {
+     "name": "Heroku",
+     "dns": [
+      "herokuapp",
+      "herokudns"
+     ]
+    },
+    {
+     "name": "GitHub Pages",
+     "dns": [
+      "github\\.io"
+     ],
+     "headers": {
+      "server": "github\\.com"
+     }
+    }
+   ]
+  },
+  {
+   "category": "saas-ops",
+   "label": "Corporate SaaS & identity",
+   "order": 100,
+   "vendors": [
+    {
+     "name": "Greenhouse",
+     "dns": [
+      "greenhouse\\.io"
+     ],
+     "notes": "careers.brand.com CNAMEs to boards.greenhouse.io."
+    },
+    {
+     "name": "Lever",
+     "dns": [
+      "lever\\.co"
+     ]
+    },
+    {
+     "name": "Ashby",
+     "dns": [
+      "ashbyhq"
+     ]
+    },
+    {
+     "name": "Workday",
+     "dns": [
+      "myworkday"
+     ]
+    },
+    {
+     "name": "Atlassian Statuspage",
+     "dns": [
+      "statuspage\\.io"
+     ],
+     "notes": "status.brand.com CNAMEs straight to statuspage.io."
+    },
+    {
+     "name": "Instatus",
+     "dns": [
+      "instatus"
+     ]
+    },
+    {
+     "name": "Okta",
+     "dns": [
+      "okta\\.com",
+      "oktapreview"
+     ]
+    },
+    {
+     "name": "Auth0",
+     "dns": [
+      "auth0\\.com"
+     ]
+    },
+    {
+     "name": "OneLogin",
+     "dns": [
+      "onelogin\\.com"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -32,6 +32,7 @@ What it adds over the original script:
 - **DNS over HTTPS.** Lookups go through Cloudflare or Google DoH, so it runs identically on any OS and inside locked-down CI where port 53 is blocked.
 - **The discovery loop, kept.** Unmatched SPF includes, CNAME targets and interesting page hosts are surfaced instead of dropped. That loop found Oracle Bronto for crm-scan; it feeds the fingerprint database here.
 - **An offline test suite** (`python3 -m unittest`) against recorded fixtures, and a Claude Code skill in `.claude/skills/stackscan/` so an agent can run scans and teach the scanner new vendors without being re-briefed.
+- **A free web scanner** in `web/` that runs the whole DNS layer in the browser, because Cloudflare's and Google's DNS-over-HTTPS endpoints are CORS-enabled. Static page, no backend, no keys; per-domain reports are shareable URLs (`?domain=gymshark.com`). Try it locally with `python3 -m http.server -d web`, deploy it with GitHub Pages. After editing fingerprints, regenerate its bundle with `python3 -m stackscan bundle` (a test fails if you forget).
 
 Same rules as the original: read-only, public data, no keys, and transparent about what it doesn't know. One difference in reporting: transactional mail infrastructure (SendGrid, Mailgun, SES) is a category here rather than filtered noise, because in a vendor-stack scan it is signal.
 

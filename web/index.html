@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>stackscan</title>
+<meta name="description" content="See any company's vendor stack from public DNS signals. No signup, no keys - your browser queries DNS itself.">
+<style>
+  :root {
+    --bg: #f4f5f1;
+    --surface: #fdfdfb;
+    --ink: #22282d;
+    --ink-soft: #5c666f;
+    --line: #d9ddd2;
+    --accent: #0e7c6b;
+    --accent-soft: #ddeee9;
+    --warn: #a96208;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15191c;
+      --surface: #1c2226;
+      --ink: #e5e8e1;
+      --ink-soft: #98a29b;
+      --line: #303a40;
+      --accent: #52bca8;
+      --accent-soft: #16332e;
+      --warn: #e0a44e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-family: var(--mono); font-size: 28px; margin: 0; letter-spacing: -0.02em; }
+  h1 .dot { color: var(--accent); }
+  .tagline { color: var(--ink-soft); margin: 6px 0 28px; }
+  form { display: flex; gap: 8px; }
+  input[type=text] {
+    flex: 1; font: 16px var(--mono); color: var(--ink);
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 6px; padding: 11px 14px; min-width: 0;
+  }
+  input[type=text]:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  button {
+    font: 600 15px system-ui, sans-serif; color: #fff;
+    background: var(--accent); border: 0; border-radius: 6px;
+    padding: 11px 22px; cursor: pointer;
+  }
+  button:disabled { opacity: 0.6; cursor: wait; }
+  button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .examples { margin-top: 10px; font-size: 13.5px; color: var(--ink-soft); }
+  .examples a { color: var(--accent); text-decoration: none; font-family: var(--mono); }
+  .examples a:hover { text-decoration: underline; }
+  #status { font-family: var(--mono); font-size: 13px; color: var(--ink-soft); margin-top: 20px; min-height: 20px; }
+  #results { margin-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+  .cat {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 6px; padding: 12px 16px;
+  }
+  .cat-label {
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-soft); margin-bottom: 4px;
+  }
+  .vendors { font-size: 17px; font-weight: 600; }
+  .vendors .conf { color: var(--accent); }
+  details { margin-top: 6px; }
+  summary { font-size: 12.5px; color: var(--ink-soft); cursor: pointer; }
+  .evidence { font-family: var(--mono); font-size: 12px; color: var(--ink-soft);
+    margin: 6px 0 0; padding: 0; list-style: none; overflow-x: auto; }
+  .evidence li { white-space: nowrap; padding: 2px 0; }
+  .unknown .vendors { color: var(--warn); font-family: var(--mono); font-size: 14px; font-weight: 500; }
+  .note { font-size: 13.5px; color: var(--ink-soft); margin-top: 18px; }
+  .note a { color: var(--accent); }
+  footer { margin-top: 48px; font-size: 13px; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 16px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>stackscan<span class="dot">.</span></h1>
+  <p class="tagline">See any company's vendor stack from public DNS signals.
+  No signup, no keys &mdash; your browser queries DNS itself.</p>
+
+  <form id="form">
+    <input id="domain" type="text" placeholder="brand.com" autocomplete="off"
+           autocapitalize="off" spellcheck="false" aria-label="Domain to scan">
+    <button id="go" type="submit">Scan</button>
+  </form>
+  <p class="examples">Try:
+    <a href="?domain=gymshark.com">gymshark.com</a> &middot;
+    <a href="?domain=allbirds.com">allbirds.com</a> &middot;
+    <a href="?domain=huel.com">huel.com</a></p>
+
+  <div id="status" role="status"></div>
+  <div id="results"></div>
+
+  <p class="note" id="note" hidden>DNS shows what a company <em>authorized</em>:
+  its ESP, mail host, support desk, ATS, hosting. Onsite tags (payments,
+  loyalty, analytics) need a page fetch a browser can't do cross-origin &mdash;
+  run the <a href="https://github.com/suhmantics-droid/crm-scan">CLI</a> for
+  the full scan. A record proves a vendor was authorized, not that it is the
+  primary system today.</p>
+
+  <footer>Read-only, public data, rate-limit yourself on lists.
+  Part of <a href="https://github.com/suhmantics-droid/crm-scan">crm-scan</a>.
+  Something unmatched? That's a fingerprint waiting to be
+  <a href="https://github.com/suhmantics-droid/crm-scan/blob/main/fingerprints/">added</a>.</footer>
+</div>
+
+<script type="module">
+  import { scanDomain, resolveBrandDomain } from "./app.js";
+
+  const $ = (id) => document.getElementById(id);
+  const dbPromise = fetch("./fingerprints.json").then((r) => r.json());
+
+  function render(result) {
+    const box = $("results");
+    box.textContent = "";
+    if (result.error) {
+      $("status").textContent = `"${$("domain").value}" ${result.error}`;
+      return;
+    }
+    const groups = new Map();
+    for (const f of result.findings) {
+      if (!groups.has(f.label)) groups.set(f.label, []);
+      groups.get(f.label).push(f);
+    }
+    for (const [label, findings] of groups) {
+      const cat = document.createElement("div");
+      cat.className = "cat";
+      const evidence = findings.flatMap(
+        (f) => f.evidence.map((e) => `${f.name} ← ${e}`));
+      cat.innerHTML = `
+        <div class="cat-label"></div>
+        <div class="vendors"></div>
+        <details><summary>evidence</summary><ul class="evidence"></ul></details>`;
+      cat.querySelector(".cat-label").textContent = label;
+      cat.querySelector(".vendors").innerHTML = findings
+        .map((f) => `<span class="conf"></span>`).join(", ");
+      cat.querySelectorAll(".conf").forEach((el, i) => {
+        el.textContent = findings[i].name;
+      });
+      const ul = cat.querySelector(".evidence");
+      for (const e of evidence) {
+        const li = document.createElement("li");
+        li.textContent = e;
+        ul.appendChild(li);
+      }
+      box.appendChild(cat);
+    }
+    if (result.unknowns.length) {
+      const cat = document.createElement("div");
+      cat.className = "cat unknown";
+      cat.innerHTML = `<div class="cat-label">Unmatched signals</div>
+        <div class="vendors"></div>`;
+      cat.querySelector(".vendors").textContent = result.unknowns.join(", ");
+      box.appendChild(cat);
+    }
+    const n = result.findings.length;
+    $("status").textContent = n
+      ? `${result.domain}: ${n} vendor${n > 1 ? "s" : ""} identified from public DNS.`
+      : `${result.domain}: no vendors identified. If this domain definitely ` +
+        `sends marketing email, its platform may need a fingerprint.`;
+    $("note").hidden = false;
+  }
+
+  async function scan(raw) {
+    const domain = resolveBrandDomain(raw);
+    if (!domain) {
+      $("status").textContent = `"${raw}" doesn't look like a domain.`;
+      return;
+    }
+    $("go").disabled = true;
+    $("results").textContent = "";
+    try {
+      const db = await dbPromise;
+      const result = await scanDomain(domain, db, fetch.bind(window), (done, total) => {
+        $("status").textContent = `querying ${domain}: ${done}/${total} records...`;
+      });
+      history.replaceState(null, "", `?domain=${encodeURIComponent(domain)}`);
+      render(result);
+    } catch (err) {
+      $("status").textContent = `Scan failed: ${err.message}. If this persists, ` +
+        `your network may block DNS-over-HTTPS - the CLI has the same scan.`;
+    } finally {
+      $("go").disabled = false;
+    }
+  }
+
+  $("form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    scan($("domain").value);
+  });
+
+  const preset = new URLSearchParams(location.search).get("domain");
+  if (preset) {
+    $("domain").value = preset;
+    scan(preset);
+  }
+</script>
+</body>
+</html>

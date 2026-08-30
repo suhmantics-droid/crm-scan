@@ -44,7 +44,8 @@ training data - work from evidence:
    signals (confirmed) over `page` (observed). Keep patterns specific
    enough not to match English prose in HTML - `"gladly\\.com"`, never
    `"gladly"`.
-4. Validate and test: `python3 -m stackscan validate && python3 -m unittest`.
+4. Validate, rebundle for the web scanner, and test:
+   `python3 -m stackscan validate && python3 -m stackscan bundle && python3 -m unittest`.
 5. Re-scan the domain that surfaced the signal and confirm the vendor now
    appears with sensible evidence (`--evidence`).
 
@@ -55,9 +56,20 @@ named vendor in the same category also matched.
 
 New category = new JSON file with `category`, `label`, `order`, `vendors`.
 
+## The web scanner
+
+`web/` is a static page running the DNS layer in the browser via CORS-enabled
+DoH - no backend. `web/app.js` is a port of the Python engine's DNS layer:
+if you change probes or matching in `stackscan/engine.py`, mirror it there,
+and keep `web/app.test.mjs` (run: `node --test web/app.test.mjs`) asserting
+the same expectations as the Python suite. `web/fingerprints.json` is
+generated - never edit it by hand, regenerate with `python3 -m stackscan
+bundle` after any fingerprint change.
+
 ## Before committing
 
-`python3 -m stackscan validate` must print OK and `python3 -m unittest`
-must pass. If engine behavior changed, extend the fixtures under
-`tests/fixtures/acme/` rather than adding network-dependent tests - the
-suite must stay runnable offline.
+`python3 -m stackscan validate` must print OK, `python3 -m unittest` must
+pass (it also fails if the web bundle is stale), and `node --test
+web/app.test.mjs` must pass. If engine behavior changed, extend the fixtures
+under `tests/fixtures/acme/` rather than adding network-dependent tests -
+the suite must stay runnable offline.
