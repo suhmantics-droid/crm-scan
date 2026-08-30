@@ -1,0 +1,147 @@
+"""CLI entry point: python3 -m stackscan {scan,validate,list}"""
+
+import argparse
+import csv
+import json
+import sys
+import time
+from pathlib import Path
+
+from . import __version__
+from .dns_client import DohResolver, FixtureResolver
+from .engine import resolve_brand_domain, scan_domain
+from .fingerprints import DEFAULT_DB_DIR, load_db, validate_db
+from .http_client import FixtureFetcher, HttpFetcher
+from .report import render_console, to_json, write_csv
+
+
+def _read_targets(args):
+    if args.input:
+        with open(args.input, newline="", encoding="utf-8-sig") as fh:
+            rows = list(csv.DictReader(fh))
+        if not rows:
+            sys.exit(f"input CSV is empty: {args.input}")
+        cols = rows[0].keys()
+        ccol = next((c for c in cols if c.lower().startswith("company")), None)
+        dcol = next((c for c in cols if c.lower().startswith("domain")), None)
+        if not ccol and not dcol:
+            sys.exit(f"no Company or Domain column found; columns: {', '.join(cols)}")
+        return [((r.get(ccol) or "").strip(), (r.get(dcol) or "").strip())
+                for r in rows]
+    return [(d, d) for d in args.domains]
+
+
+def cmd_scan(args):
+    categories = set(args.categories.split(",")) if args.categories else None
+    vendors, labels = load_db(args.fingerprints, categories)
+
+    if args.fixtures:
+        fx = Path(args.fixtures)
+        resolver = FixtureResolver(json.loads((fx / "dns.json").read_text()))
+        fetcher = None if args.dns_only else FixtureFetcher(
+            json.loads((fx / "http.json").read_text()))
+    else:
+        resolver = DohResolver(timeout=args.timeout)
+        fetcher = None if args.dns_only else HttpFetcher(timeout=args.timeout)
+
+    targets = _read_targets(args)
+    # Dedupe before scanning. On one real list this collapsed 4,394 rows to
+    # 1,015 unique domains.
+    seen = {}
+    results = []
+    for n, (company, raw) in enumerate(targets, 1):
+        domain = resolve_brand_domain(company, raw)
+        if not domain:
+            from .engine import DomainResult
+            results.append(DomainResult(company, "", "needs-domain"))
+            print(f"[{n}/{len(targets)}] {company} -> no resolvable domain")
+            continue
+        if domain in seen:
+            results.append(seen[domain])
+            continue
+        result = scan_domain(company, domain, vendors, resolver, fetcher,
+                             workers=args.workers)
+        seen[domain] = result
+        results.append(result)
+        print(f"[{n}/{len(targets)}] ", end="")
+        print(render_console(result, labels, show_evidence=args.evidence))
+        if args.delay:
+            time.sleep(args.delay)
+
+    if args.csv:
+        write_csv(results, labels, args.csv)
+        print(f"\nWritten to {args.csv}")
+    if args.json:
+        Path(args.json).write_text(to_json(results, labels), encoding="utf-8")
+        print(f"Written to {args.json}")
+
+    found = sum(1 for r in results if r.findings)
+    print(f"\nScanned {len(targets)} rows, {len(seen)} unique domains. "
+          f"Vendors identified on {found}.")
+
+
+def cmd_validate(args):
+    problems = validate_db(args.fingerprints)
+    if problems:
+        print(f"{len(problems)} problem(s):")
+        for p in problems:
+            print(f"  - {p}")
+        sys.exit(1)
+    vendors, labels = load_db(args.fingerprints)
+    print(f"OK: {len(vendors)} vendors across {len(labels)} categories.")
+
+
+def cmd_list(args):
+    categories = set(args.categories.split(",")) if args.categories else None
+    vendors, labels = load_db(args.fingerprints, categories)
+    for cat, label in labels.items():
+        names = [v.name + (" (shared)" if v.shared else "")
+                 for v in vendors if v.category == cat]
+        print(f"{label} ({cat}): {len(names)}")
+        print(f"  {', '.join(names)}")
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        prog="stackscan",
+        description="Detect a company's vendor stack from public signals: "
+                    "DNS records and one page fetch. No API keys, no LLM calls.")
+    ap.add_argument("--version", action="version", version=__version__)
+    ap.add_argument("--fingerprints", default=str(DEFAULT_DB_DIR),
+                    help="fingerprint database directory")
+    sub = ap.add_subparsers(dest="command", required=True)
+
+    sc = sub.add_parser("scan", help="scan one or more domains")
+    sc.add_argument("domains", nargs="*", help="domains to scan")
+    sc.add_argument("--input", help="CSV with Company and/or Domain columns")
+    sc.add_argument("--csv", help="write results to this CSV")
+    sc.add_argument("--json", help="write full results (with evidence) to JSON")
+    sc.add_argument("--dns-only", action="store_true",
+                    help="skip the page layer: faster, quieter")
+    sc.add_argument("--categories", help="comma-separated category filter")
+    sc.add_argument("--evidence", action="store_true",
+                    help="print the matched record behind each vendor")
+    sc.add_argument("--delay", type=float, default=0,
+                    help="seconds between domains; be polite on long lists")
+    sc.add_argument("--workers", type=int, default=12,
+                    help="parallel DNS queries per domain")
+    sc.add_argument("--timeout", type=int, default=15)
+    sc.add_argument("--fixtures", help="offline mode: directory with dns.json "
+                                       "and http.json (for tests)")
+    sc.set_defaults(func=cmd_scan)
+
+    va = sub.add_parser("validate", help="lint the fingerprint database")
+    va.set_defaults(func=cmd_validate)
+
+    ls = sub.add_parser("list", help="show vendors in the database")
+    ls.add_argument("--categories", help="comma-separated category filter")
+    ls.set_defaults(func=cmd_list)
+
+    args = ap.parse_args(argv)
+    if args.command == "scan" and not args.domains and not args.input:
+        ap.error("give domains to scan, or --input a CSV")
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()

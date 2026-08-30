@@ -13,6 +13,32 @@ No API keys. No enrichment vendor. No LLM calls. Pure PowerShell.
 
 ---
 
+## stackscan: the same idea, generalized
+
+crm-scan answers one question: which ESP does this brand run. The same public signals answer a bigger one: what is this company's entire vendor stack. **stackscan** is that generalization, a stdlib-only Python framework in this repo with the fingerprints moved out of the code into a data-driven database.
+
+```bash
+python3 -m stackscan scan gymshark.com --evidence
+python3 -m stackscan scan --input brands.csv --csv results.csv
+python3 -m stackscan validate
+```
+
+What it adds over the original script:
+
+- **127 vendors across 10 categories** in `fingerprints/*.json`: commerce platform, email/CRM, loyalty and reviews, payments, analytics/CDP, support, mail infrastructure, email security and DMARC monitoring, hosting/CDN, corporate SaaS and identity. Adding a vendor is a JSON edit, not a code change.
+- **Service-subdomain probing.** The SPF insight extends past email: `help.brand.com` CNAMEs to `brand.zendesk.com`, `careers.brand.com` to `boards.greenhouse.io`, `status.brand.com` to `statuspage.io`. One CNAME query each, all confirmed infrastructure.
+- **Evidence on every hit.** `--evidence` prints the exact record behind each detection, so a human can verify any claim in seconds.
+- **Confidence semantics.** DNS, MX, NS, header and IP-range hits are *confirmed* (infrastructure the vendor had to be authorized into). Page hits are marked `~` for *observed*, because JS tags linger after churn.
+- **DNS over HTTPS.** Lookups go through Cloudflare or Google DoH, so it runs identically on any OS and inside locked-down CI where port 53 is blocked.
+- **The discovery loop, kept.** Unmatched SPF includes, CNAME targets and interesting page hosts are surfaced instead of dropped. That loop found Oracle Bronto for crm-scan; it feeds the fingerprint database here.
+- **An offline test suite** (`python3 -m unittest`) against recorded fixtures, and a Claude Code skill in `.claude/skills/stackscan/` so an agent can run scans and teach the scanner new vendors without being re-briefed.
+
+Same rules as the original: read-only, public data, no keys, and transparent about what it doesn't know. One difference in reporting: transactional mail infrastructure (SendGrid, Mailgun, SES) is a category here rather than filtered noise, because in a vendor-stack scan it is signal.
+
+The PowerShell original below is unchanged and still does its one job well.
+
+---
+
 ## Why this exists
 
 I needed the CRM and email platform for 490 retail brands.

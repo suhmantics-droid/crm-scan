@@ -1,0 +1,36 @@
+{
+  "category": "hosting-cdn",
+  "label": "Hosting & CDN",
+  "order": 90,
+  "vendors": [
+    {
+      "name": "Cloudflare",
+      "ns": ["cloudflare\\.com"],
+      "headers": {"server": "cloudflare"}
+    },
+    {
+      "name": "Fastly",
+      "dns": ["fastly"],
+      "headers": {"via": "fastly", "x-served-by": "cache-"}
+    },
+    {
+      "name": "Akamai",
+      "dns": ["edgekey", "edgesuite", "akamai"],
+      "ns": ["akam\\.net"],
+      "headers": {"server": "akamaighost"}
+    },
+    {
+      "name": "Amazon CloudFront",
+      "dns": ["cloudfront"],
+      "headers": {"via": "cloudfront", "x-amz-cf-id": ".+"}
+    },
+    {
+      "name": "Vercel",
+      "dns": ["vercel-dns", "vercel\\.app"],
+      "headers": {"server": "^vercel$", "x-vercel-id": ".+"}
+    },
+    {"name": "Netlify", "dns": ["netlify"], "headers": {"server": "netlify"}},
+    {"name": "Heroku", "dns": ["herokuapp", "herokudns"]},
+    {"name": "GitHub Pages", "dns": ["github\\.io"], "headers": {"server": "github\\.com"}}
+  ]
+}

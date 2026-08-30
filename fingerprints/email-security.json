@@ -1,0 +1,20 @@
+{
+  "category": "email-security",
+  "label": "Email security & DMARC",
+  "order": 80,
+  "vendors": [
+    {"name": "Mimecast", "mx": ["mimecast"], "dns": ["mimecast"]},
+    {"name": "Proofpoint", "mx": ["pphosted"], "dns": ["pphosted", "proofpoint"]},
+    {"name": "Barracuda", "mx": ["barracudanetworks", "ess\\.barracuda"], "dns": ["barracuda"]},
+    {"name": "Broadcom MessageLabs", "mx": ["messagelabs"], "dns": ["messagelabs"]},
+    {
+      "name": "Valimail",
+      "dns": ["valimail"],
+      "notes": "DMARC rua addresses frequently name the monitoring vendor outright."
+    },
+    {"name": "dmarcian", "dns": ["dmarcian"]},
+    {"name": "EasyDMARC", "dns": ["easydmarc"]},
+    {"name": "Red Sift OnDMARC", "dns": ["ondmarc", "redsift"]},
+    {"name": "Agari", "dns": ["agari"]}
+  ]
+}

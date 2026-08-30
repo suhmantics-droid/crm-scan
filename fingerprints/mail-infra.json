@@ -1,0 +1,30 @@
+{
+  "category": "mail-infra",
+  "label": "Mail infrastructure",
+  "order": 70,
+  "vendors": [
+    {
+      "name": "Google Workspace",
+      "mx": ["aspmx\\.l\\.google\\.com", "smtp\\.google\\.com", "googlemail\\.com"],
+      "dns": ["_spf\\.google\\.com", "googlemail"]
+    },
+    {
+      "name": "Microsoft 365",
+      "mx": ["mail\\.protection\\.outlook\\.com"],
+      "dns": ["spf\\.protection\\.outlook", "onmicrosoft\\.com", "autodiscover\\.outlook"],
+      "notes": "MX alone is unreliable behind security gateways; the autodiscover CNAME and onmicrosoft DKIM selectors settle it."
+    },
+    {"name": "SendGrid", "dns": ["sendgrid\\.net"]},
+    {"name": "Mailgun", "dns": ["mailgun"]},
+    {"name": "Amazon SES", "dns": ["amazonses"]},
+    {"name": "Postmark", "dns": ["mtasv\\.net", "postmarkapp"]},
+    {"name": "Mandrill", "dns": ["mandrill"]},
+    {
+      "name": "SparkPost",
+      "dns": ["sparkpost"],
+      "shared": true,
+      "notes": "Shared infrastructure behind several ESPs; suppressed when a named vendor is present."
+    },
+    {"name": "Zoho Mail", "mx": ["zoho"], "dns": ["zoho\\.com", "zoho\\.eu"]}
+  ]
+}

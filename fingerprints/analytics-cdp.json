@@ -1,0 +1,18 @@
+{
+  "category": "analytics-cdp",
+  "label": "Analytics & CDP",
+  "order": 50,
+  "vendors": [
+    {"name": "Google Tag Manager", "page": ["googletagmanager\\.com"]},
+    {"name": "Google Analytics", "page": ["google-analytics\\.com", "gtag/js"]},
+    {"name": "Segment", "page": ["cdn\\.segment"]},
+    {"name": "Tealium", "page": ["tiqcdn", "tealium"]},
+    {"name": "Mixpanel", "page": ["mixpanel", "mxpnl"]},
+    {"name": "Amplitude", "page": ["cdn\\.amplitude", "amplitude\\.com"]},
+    {"name": "Hotjar", "page": ["hotjar"]},
+    {"name": "FullStory", "page": ["fullstory"]},
+    {"name": "Heap", "page": ["heapanalytics"]},
+    {"name": "PostHog", "page": ["posthog"]},
+    {"name": "Snowplow", "page": ["snowplow"]}
+  ]
+}

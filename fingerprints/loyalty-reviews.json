@@ -1,0 +1,22 @@
+{
+  "category": "loyalty-reviews",
+  "label": "Loyalty & reviews",
+  "order": 30,
+  "vendors": [
+    {"name": "LoyaltyLion", "page": ["loyaltylion"]},
+    {"name": "Yotpo", "dns": ["yotpo"], "page": ["yotpo"]},
+    {"name": "Smile.io", "page": ["smile\\.io"]},
+    {"name": "Antavo", "dns": ["antavo"], "page": ["antavo"]},
+    {"name": "Punchh", "dns": ["punchh"], "page": ["punchh"]},
+    {"name": "Okendo", "page": ["okendo"]},
+    {"name": "Stamped", "page": ["stamped\\.io"]},
+    {"name": "Rebuy", "page": ["rebuyengine"]},
+    {"name": "Nosto", "page": ["\\bnosto"]},
+    {"name": "Klevu", "page": ["klevu"]},
+    {"name": "Trustpilot", "page": ["trustpilot"]},
+    {"name": "Reviews.io", "page": ["reviews\\.io", "reviews\\.co\\.uk"]},
+    {"name": "Feefo", "page": ["feefo"]},
+    {"name": "Bazaarvoice", "page": ["bazaarvoice"]},
+    {"name": "PowerReviews", "page": ["powerreviews"]}
+  ]
+}

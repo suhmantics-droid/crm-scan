@@ -1,0 +1,24 @@
+{
+  "category": "saas-ops",
+  "label": "Corporate SaaS & identity",
+  "order": 100,
+  "vendors": [
+    {
+      "name": "Greenhouse",
+      "dns": ["greenhouse\\.io"],
+      "notes": "careers.brand.com CNAMEs to boards.greenhouse.io."
+    },
+    {"name": "Lever", "dns": ["lever\\.co"]},
+    {"name": "Ashby", "dns": ["ashbyhq"]},
+    {"name": "Workday", "dns": ["myworkday"]},
+    {
+      "name": "Atlassian Statuspage",
+      "dns": ["statuspage\\.io"],
+      "notes": "status.brand.com CNAMEs straight to statuspage.io."
+    },
+    {"name": "Instatus", "dns": ["instatus"]},
+    {"name": "Okta", "dns": ["okta\\.com", "oktapreview"]},
+    {"name": "Auth0", "dns": ["auth0\\.com"]},
+    {"name": "OneLogin", "dns": ["onelogin\\.com"]}
+  ]
+}

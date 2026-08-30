@@ -1,0 +1,22 @@
+{
+  "category": "support",
+  "label": "Support & chat",
+  "order": 60,
+  "vendors": [
+    {
+      "name": "Zendesk",
+      "dns": ["zendesk\\.com"],
+      "page": ["zdassets", "zendesk"],
+      "notes": "help.brand.com CNAMEs straight to brand.zendesk.com."
+    },
+    {"name": "Intercom", "page": ["intercom\\.io", "intercomcdn"]},
+    {"name": "Gorgias", "dns": ["gorgias"], "page": ["gorgias"]},
+    {"name": "Freshworks", "dns": ["freshdesk", "freshemail"], "page": ["freshdesk", "freshworks"]},
+    {"name": "Drift", "page": ["driftt\\.com", "drift\\.com"]},
+    {"name": "Crisp", "page": ["crisp\\.chat"]},
+    {"name": "Kustomer", "page": ["kustomer"]},
+    {"name": "Gladly", "page": ["gladly\\.com"]},
+    {"name": "LiveChat", "page": ["livechatinc"]},
+    {"name": "Tidio", "page": ["tidio"]}
+  ]
+}
