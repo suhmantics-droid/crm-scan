@@ -52,15 +52,23 @@ export function resolveBrandDomain(raw) {
 
 export async function dohQuery(fetchFn, name, rtype) {
   const params = new URLSearchParams({ name, type: rtype });
-  for (const base of PROVIDERS) {
-    try {
-      const resp = await fetchFn(base + params.toString(), {
-        headers: { accept: "application/dns-json" },
-      });
-      if (!resp.ok) continue;
-      return extractAnswers(await resp.json(), rtype);
-    } catch {
-      continue; // next provider; both failing means no answer
+  // Two rounds over both providers: a throttled resolver is a bad moment,
+  // not a fact about the domain. Status 0 = NOERROR, 3 = NXDOMAIN are the
+  // only authoritative answers; SERVFAIL/REFUSED get retried.
+  for (let attempt = 0; attempt < 2; attempt++) {
+    if (attempt) await new Promise((r) => setTimeout(r, 400));
+    for (const base of PROVIDERS) {
+      try {
+        const resp = await fetchFn(base + params.toString(), {
+          headers: { accept: "application/dns-json" },
+        });
+        if (!resp.ok) continue;
+        const payload = await resp.json();
+        if (payload.Status !== 0 && payload.Status !== 3) continue;
+        return extractAnswers(payload, rtype);
+      } catch {
+        continue; // next provider / next round
+      }
     }
   }
   return [];

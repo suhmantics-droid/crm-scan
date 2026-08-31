@@ -10,6 +10,7 @@ environment variable, which urllib reads on its own.
 import json
 import ssl
 import threading
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -27,9 +28,12 @@ PROVIDERS = {
 class DohResolver:
     """Resolves names via DoH JSON, with an in-memory cache per process."""
 
-    def __init__(self, providers=("cloudflare", "google"), timeout=8):
+    def __init__(self, providers=("cloudflare", "google"), timeout=8,
+                 attempts=2, backoff=0.5):
         self.providers = [PROVIDERS[p] for p in providers]
         self.timeout = timeout
+        self.attempts = attempts
+        self.backoff = backoff
         self._cache = {}
         self._lock = threading.Lock()
         self._ctx = ssl.create_default_context()
@@ -39,31 +43,46 @@ class DohResolver:
 
         TXT strings are unquoted and re-joined (long records arrive split).
         CNAME/NS/MX targets lose their trailing dot; MX loses its preference.
+
+        Only authoritative answers (NOERROR/NXDOMAIN) are cached. A transport
+        failure or throttled provider must NOT poison the cache with an empty
+        answer - on a long CSV run that would silently blank out every later
+        row - so failures are retried with backoff and never cached.
         """
         key = (name.lower(), rtype)
         with self._lock:
             if key in self._cache:
                 return self._cache[key]
 
-        result = []
         params = urllib.parse.urlencode({"name": name, "type": rtype})
-        for base in self.providers:
-            try:
-                req = urllib.request.Request(
-                    base + params, headers={"accept": "application/dns-json"}
-                )
-                with urllib.request.urlopen(
-                    req, timeout=self.timeout, context=self._ctx
-                ) as resp:
-                    payload = json.loads(resp.read().decode("utf-8", "replace"))
+        for attempt in range(self.attempts):
+            if attempt:
+                time.sleep(self.backoff * attempt)
+            for base in self.providers:
+                try:
+                    payload = self._fetch(base + params)
+                except (urllib.error.URLError, OSError, ValueError):
+                    continue  # next provider / next round
+                # Status 0 = NOERROR, 3 = NXDOMAIN: real answers, cacheable.
+                # Anything else (SERVFAIL, REFUSED) is the resolver having a
+                # bad moment, not a fact about the domain.
+                if payload.get("Status") not in (0, 3):
+                    continue
                 result = self._extract(payload, rtype)
-                break
-            except (urllib.error.URLError, OSError, ValueError):
-                continue  # next provider; both failing means no answer
+                with self._lock:
+                    self._cache[key] = result
+                return result
+        return []  # deliberately uncached
 
-        with self._lock:
-            self._cache[key] = result
-        return result
+    def _fetch(self, url):
+        req = urllib.request.Request(
+            url, headers={"accept": "application/dns-json"})
+        with urllib.request.urlopen(
+            req, timeout=self.timeout, context=self._ctx
+        ) as resp:
+            if resp.status != 200:
+                raise OSError(f"DoH status {resp.status}")
+            return json.loads(resp.read().decode("utf-8", "replace"))
 
     @staticmethod
     def _extract(payload, rtype):

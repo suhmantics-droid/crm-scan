@@ -9,7 +9,8 @@ from stackscan.fingerprints import load_db
 from stackscan.http_client import FixtureFetcher
 from stackscan.report import to_json, write_csv
 
-FIXTURES = Path(__file__).parent / "fixtures" / "acme"
+FIX_ROOT = Path(__file__).parent / "fixtures"
+FIXTURES = FIX_ROOT / "acme"
 
 
 def scan_acme(dns_only=False):
@@ -110,6 +111,33 @@ class TestScan(unittest.TestCase):
         self.assertIn("Klaviyo", names)
         self.assertNotIn("Stripe", names)
         self.assertEqual(result.method, "dns-only")
+
+
+class TestCollisionDecoys(unittest.TestCase):
+    def test_lookalike_hosts_are_not_detections(self):
+        # decoycorp's DNS is built entirely of lookalike hosts that CONTAIN
+        # vendor patterns as substrings: portal.clever.co (not Lever),
+        # shop.twix.com (not Wix), sso.oauth0.com (not Auth0),
+        # monitor.asagari.net (not Agari), jobs.wintergreenhouse.io (not
+        # Greenhouse), ats.lever.company (not lever.co), cdn.breakfastly.net
+        # (not Fastly), relay.sozoho.com (not Zoho), SPF includes
+        # spf.literable.net (not Iterable) and mail.embraze.io (not Braze),
+        # and the page loads cdn.sundrip.com (not Drip) and
+        # static.concordial.example.net (not Cordial). Every one must come
+        # back as an unmatched signal, never as a vendor claim.
+        vendors, _ = load_db()
+        fx = FIX_ROOT / "decoys"
+        resolver = FixtureResolver(json.loads((fx / "dns.json").read_text()))
+        fetcher = FixtureFetcher(json.loads((fx / "http.json").read_text()))
+        result = scan_domain("", "decoycorp.example", vendors, resolver, fetcher)
+
+        claimed = [f.vendor.name for f in result.findings]
+        self.assertEqual(claimed, [], f"lookalikes claimed as vendors: {claimed}")
+        # Surfaced for a human, not silently dropped (the list caps at 6,
+        # so assert on entries early in probe order).
+        joined = " ".join(result.unknowns)
+        self.assertIn("asagari", joined, result.unknowns)
+        self.assertIn("lever.company", joined, result.unknowns)
 
 
 class TestReport(unittest.TestCase):

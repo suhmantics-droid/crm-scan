@@ -78,7 +78,7 @@
      "name": "Wix",
      "dns": [
       "wixdns",
-      "wix\\.com"
+      "\\bwix\\.com"
      ],
      "page": [
       "wixstatic",
@@ -180,7 +180,7 @@
     {
      "name": "Iterable",
      "dns": [
-      "iterable"
+      "\\biterable"
      ]
     },
     {
@@ -333,20 +333,20 @@
     {
      "name": "Braze",
      "dns": [
-      "braze"
+      "\\bbraze"
      ],
      "page": [
-      "braze",
+      "\\bbraze",
       "appboy"
      ]
     },
     {
      "name": "Cordial",
      "dns": [
-      "cordial"
+      "\\bcordial"
      ],
      "page": [
-      "cordial"
+      "\\bcordial"
      ]
     },
     {
@@ -363,11 +363,11 @@
      "name": "Brevo",
      "dns": [
       "sendinblue",
-      "brevo"
+      "\\bbrevo"
      ],
      "page": [
       "sendinblue",
-      "brevo"
+      "\\bbrevo"
      ]
     },
     {
@@ -391,10 +391,10 @@
     {
      "name": "Ortto",
      "dns": [
-      "ortto"
+      "\\bortto"
      ],
      "page": [
-      "ortto"
+      "\\bortto"
      ]
     },
     {
@@ -403,7 +403,7 @@
       "getdrip"
      ],
      "page": [
-      "drip\\.com",
+      "\\bdrip\\.com",
       "getdrip"
      ]
     },
@@ -866,11 +866,11 @@
     {
      "name": "Zoho Mail",
      "mx": [
-      "zoho"
+      "\\bzoho"
      ],
      "dns": [
-      "zoho\\.com",
-      "zoho\\.eu"
+      "\\bzoho\\.com",
+      "\\bzoho\\.eu"
      ]
     }
    ]
@@ -947,7 +947,7 @@
     {
      "name": "Agari",
      "dns": [
-      "agari"
+      "\\bagari"
      ]
     }
    ]
@@ -969,7 +969,7 @@
     {
      "name": "Fastly",
      "dns": [
-      "fastly"
+      "\\bfastly"
      ],
      "headers": {
       "via": "fastly",
@@ -1046,14 +1046,14 @@
     {
      "name": "Greenhouse",
      "dns": [
-      "greenhouse\\.io"
+      "\\bgreenhouse\\.io"
      ],
      "notes": "careers.brand.com CNAMEs to boards.greenhouse.io."
     },
     {
      "name": "Lever",
      "dns": [
-      "lever\\.co"
+      "\\blever\\.co\\b"
      ]
     },
     {
@@ -1071,33 +1071,33 @@
     {
      "name": "Atlassian Statuspage",
      "dns": [
-      "statuspage\\.io"
+      "\\bstatuspage\\.io"
      ],
      "notes": "status.brand.com CNAMEs straight to statuspage.io."
     },
     {
      "name": "Instatus",
      "dns": [
-      "instatus"
+      "\\binstatus"
      ]
     },
     {
      "name": "Okta",
      "dns": [
-      "okta\\.com",
+      "\\bokta\\.com",
       "oktapreview"
      ]
     },
     {
      "name": "Auth0",
      "dns": [
-      "auth0\\.com"
+      "\\bauth0\\.com"
      ]
     },
     {
      "name": "OneLogin",
      "dns": [
-      "onelogin\\.com"
+      "\\bonelogin\\.com"
      ]
     }
    ]

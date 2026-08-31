@@ -5,20 +5,60 @@
   "vendors": [
     {
       "name": "Greenhouse",
-      "dns": ["greenhouse\\.io"],
+      "dns": [
+        "\\bgreenhouse\\.io"
+      ],
       "notes": "careers.brand.com CNAMEs to boards.greenhouse.io."
     },
-    {"name": "Lever", "dns": ["lever\\.co"]},
-    {"name": "Ashby", "dns": ["ashbyhq"]},
-    {"name": "Workday", "dns": ["myworkday"]},
+    {
+      "name": "Lever",
+      "dns": [
+        "\\blever\\.co\\b"
+      ]
+    },
+    {
+      "name": "Ashby",
+      "dns": [
+        "ashbyhq"
+      ]
+    },
+    {
+      "name": "Workday",
+      "dns": [
+        "myworkday"
+      ]
+    },
     {
       "name": "Atlassian Statuspage",
-      "dns": ["statuspage\\.io"],
+      "dns": [
+        "\\bstatuspage\\.io"
+      ],
       "notes": "status.brand.com CNAMEs straight to statuspage.io."
     },
-    {"name": "Instatus", "dns": ["instatus"]},
-    {"name": "Okta", "dns": ["okta\\.com", "oktapreview"]},
-    {"name": "Auth0", "dns": ["auth0\\.com"]},
-    {"name": "OneLogin", "dns": ["onelogin\\.com"]}
+    {
+      "name": "Instatus",
+      "dns": [
+        "\\binstatus"
+      ]
+    },
+    {
+      "name": "Okta",
+      "dns": [
+        "\\bokta\\.com",
+        "oktapreview"
+      ]
+    },
+    {
+      "name": "Auth0",
+      "dns": [
+        "\\bauth0\\.com"
+      ]
+    },
+    {
+      "name": "OneLogin",
+      "dns": [
+        "\\bonelogin\\.com"
+      ]
+    }
   ]
 }

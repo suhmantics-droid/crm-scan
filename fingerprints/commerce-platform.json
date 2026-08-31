@@ -5,46 +5,93 @@
   "vendors": [
     {
       "name": "Shopify",
-      "dns": ["myshopify", "shopify"],
-      "page": ["cdn\\.shopify", "/cdn/shop/"],
-      "page_text": ["window\\.shopify"],
-      "headers": {"powered-by": "shopify", "x-shopid": "\\d", "x-shopify-stage": ".+"},
-      "ip_cidr": ["23.227.32.0/19"],
+      "dns": [
+        "myshopify",
+        "shopify"
+      ],
+      "page": [
+        "cdn\\.shopify",
+        "/cdn/shop/"
+      ],
+      "page_text": [
+        "window\\.shopify"
+      ],
+      "headers": {
+        "powered-by": "shopify",
+        "x-shopid": "\\d",
+        "x-shopify-stage": ".+"
+      },
+      "ip_cidr": [
+        "23.227.32.0/19"
+      ],
       "notes": "Published IP range catches stores whose homepage is walled off."
     },
     {
       "name": "Salesforce Commerce Cloud",
-      "dns": ["demandware"],
-      "page": ["demandware", "dwstatic"]
+      "dns": [
+        "demandware"
+      ],
+      "page": [
+        "demandware",
+        "dwstatic"
+      ]
     },
     {
       "name": "Adobe Commerce (Magento)",
-      "page": ["magento"],
-      "page_text": ["mage/requirejs"]
+      "page": [
+        "magento"
+      ],
+      "page_text": [
+        "mage/requirejs"
+      ]
     },
     {
       "name": "BigCommerce",
-      "dns": ["bigcommerce"],
-      "page": ["bigcommerce", "cdn11\\.bigcommerce"]
+      "dns": [
+        "bigcommerce"
+      ],
+      "page": [
+        "bigcommerce",
+        "cdn11\\.bigcommerce"
+      ]
     },
     {
       "name": "WooCommerce",
-      "page": ["woocommerce"]
+      "page": [
+        "woocommerce"
+      ]
     },
     {
       "name": "Squarespace",
-      "dns": ["squarespace"],
-      "page": ["static1\\.squarespace", "squarespace\\.com"]
+      "dns": [
+        "squarespace"
+      ],
+      "page": [
+        "static1\\.squarespace",
+        "squarespace\\.com"
+      ]
     },
     {
       "name": "Wix",
-      "dns": ["wixdns", "wix\\.com"],
-      "page": ["wixstatic", "parastorage"]
+      "dns": [
+        "wixdns",
+        "\\bwix\\.com"
+      ],
+      "page": [
+        "wixstatic",
+        "parastorage"
+      ]
     },
     {
       "name": "Webflow",
-      "dns": ["proxy-ssl\\.webflow", "webflow"],
-      "page": ["website-files\\.com", "webflow"]
+      "dns": [
+        "proxy-ssl\\.webflow",
+        "webflow"
+      ],
+      "page": [
+        "website-files\\.com",
+        "webflow"
+      ]
     }
   ]
 }

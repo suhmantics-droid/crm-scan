@@ -1,0 +1,12 @@
+{
+  "TXT:decoycorp.example": ["v=spf1 include:spf.literable.net include:mail.embraze.io ~all"],
+  "A:decoycorp.example": ["203.0.113.10"],
+  "CNAME:login.decoycorp.example": ["portal.clever.co"],
+  "CNAME:shop.decoycorp.example": ["shop.twix.com"],
+  "CNAME:id.decoycorp.example": ["sso.oauth0.com"],
+  "CNAME:status.decoycorp.example": ["monitor.asagari.net"],
+  "CNAME:careers.decoycorp.example": ["jobs.wintergreenhouse.io"],
+  "CNAME:jobs.decoycorp.example": ["ats.lever.company"],
+  "CNAME:go.decoycorp.example": ["cdn.breakfastly.net"],
+  "CNAME:mail.decoycorp.example": ["relay.sozoho.com"]
+}

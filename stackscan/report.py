@@ -18,6 +18,11 @@ def render_console(result, labels, show_evidence=False):
     tag = "" if result.method == "page+dns" else f"  [{result.method}]"
     if not result.findings:
         lines.append(f"{header} -> {_color('90', '(nothing found)')}{tag}")
+        # On a no-hit scan the unmatched signals ARE the result: they are
+        # either vendors the database doesn't know yet, or nothing.
+        if result.unknowns:
+            lines.append(
+                f"  {'Unmatched signals':<24} {_color('33', ', '.join(result.unknowns))}")
         return "\n".join(lines)
 
     lines.append(f"{_color('1', header)}{tag}")

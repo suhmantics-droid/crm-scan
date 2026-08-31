@@ -3,63 +3,353 @@
   "label": "Email & CRM",
   "order": 20,
   "vendors": [
-    {"name": "Klaviyo", "dns": ["klaviyo"], "page": ["klaviyo"]},
+    {
+      "name": "Klaviyo",
+      "dns": [
+        "klaviyo"
+      ],
+      "page": [
+        "klaviyo"
+      ]
+    },
     {
       "name": "Mailchimp",
-      "dns": ["mcsv\\.net", "mailchimp", "list-manage"],
-      "page": ["mcsv\\.net", "chimpstatic", "list-manage", "mailchimp"]
+      "dns": [
+        "mcsv\\.net",
+        "mailchimp",
+        "list-manage"
+      ],
+      "page": [
+        "mcsv\\.net",
+        "chimpstatic",
+        "list-manage",
+        "mailchimp"
+      ]
     },
     {
       "name": "Salesforce Marketing Cloud",
-      "dns": ["exacttarget", "cust-spf", "mta\\.salesforce", "custdkim\\.salesforce"],
-      "page": ["exacttarget"]
+      "dns": [
+        "exacttarget",
+        "cust-spf",
+        "mta\\.salesforce",
+        "custdkim\\.salesforce"
+      ],
+      "page": [
+        "exacttarget"
+      ]
     },
-    {"name": "Bloomreach", "dns": ["exponea", "bloomreach"], "page": ["bloomreach", "exponea"]},
-    {"name": "Emarsys", "dns": ["emarsys"], "page": ["scarabresearch", "emarsys"]},
-    {"name": "Ometria", "dns": ["ometria"], "page": ["ometria"]},
-    {"name": "Sailthru", "dns": ["sailthru"], "page": ["sailthru"]},
-    {"name": "Iterable", "dns": ["iterable"]},
-    {"name": "Marketo", "dns": ["marketo", "mktomail"], "page": ["marketo", "mktoresp"]},
-    {"name": "Salesforce Pardot", "dns": ["pardot"], "page": ["pardot"]},
+    {
+      "name": "Bloomreach",
+      "dns": [
+        "exponea",
+        "bloomreach"
+      ],
+      "page": [
+        "bloomreach",
+        "exponea"
+      ]
+    },
+    {
+      "name": "Emarsys",
+      "dns": [
+        "emarsys"
+      ],
+      "page": [
+        "scarabresearch",
+        "emarsys"
+      ]
+    },
+    {
+      "name": "Ometria",
+      "dns": [
+        "ometria"
+      ],
+      "page": [
+        "ometria"
+      ]
+    },
+    {
+      "name": "Sailthru",
+      "dns": [
+        "sailthru"
+      ],
+      "page": [
+        "sailthru"
+      ]
+    },
+    {
+      "name": "Iterable",
+      "dns": [
+        "\\biterable"
+      ]
+    },
+    {
+      "name": "Marketo",
+      "dns": [
+        "marketo",
+        "mktomail"
+      ],
+      "page": [
+        "marketo",
+        "mktoresp"
+      ]
+    },
+    {
+      "name": "Salesforce Pardot",
+      "dns": [
+        "pardot"
+      ],
+      "page": [
+        "pardot"
+      ]
+    },
     {
       "name": "HubSpot",
-      "dns": ["hubspotemail", "hubspot\\.net", "hs-sending"],
-      "page": ["hubspot", "hs-scripts", "hsforms"]
+      "dns": [
+        "hubspotemail",
+        "hubspot\\.net",
+        "hs-sending"
+      ],
+      "page": [
+        "hubspot",
+        "hs-scripts",
+        "hsforms"
+      ]
     },
-    {"name": "Oracle Responsys", "dns": ["oracleemaildelivery", "responsys", "rsys\\."]},
-    {"name": "Oracle Eloqua", "dns": ["eloqua", "elqemail"], "page": ["eloqua"]},
+    {
+      "name": "Oracle Responsys",
+      "dns": [
+        "oracleemaildelivery",
+        "responsys",
+        "rsys\\."
+      ]
+    },
+    {
+      "name": "Oracle Eloqua",
+      "dns": [
+        "eloqua",
+        "elqemail"
+      ],
+      "page": [
+        "eloqua"
+      ]
+    },
     {
       "name": "Oracle Bronto",
-      "dns": ["bronto\\.com", "bm23\\.com"],
+      "dns": [
+        "bronto\\.com",
+        "bm23\\.com"
+      ],
       "notes": "Added after the unknown-vendor catch-all surfaced it on a live scan (gymshark.com)."
     },
-    {"name": "Adestra", "dns": ["msgfocus"]},
-    {"name": "SmartFocus", "dns": ["emailvision"]},
-    {"name": "Customer.io", "dns": ["customeriomail"], "page": ["customerio"]},
-    {"name": "Campaign Monitor", "dns": ["cmail\\d", "createsend"], "page": ["createsend"]},
-    {"name": "Zoho Campaigns", "dns": ["zcsend"]},
-    {"name": "Marigold", "dns": ["alterian", "cheetahmail", "cheetahdigital"]},
-    {"name": "Optimizely Data Platform", "dns": ["epidm\\.net"]},
-    {"name": "Mapp", "dns": ["m-pages", "\\bmapp\\b"]},
-    {"name": "Selligent", "dns": ["slgnt\\.eu", "selligent"]},
-    {"name": "Listrak", "dns": ["listrak"], "page": ["listrak"]},
+    {
+      "name": "Adestra",
+      "dns": [
+        "msgfocus"
+      ]
+    },
+    {
+      "name": "SmartFocus",
+      "dns": [
+        "emailvision"
+      ]
+    },
+    {
+      "name": "Customer.io",
+      "dns": [
+        "customeriomail"
+      ],
+      "page": [
+        "customerio"
+      ]
+    },
+    {
+      "name": "Campaign Monitor",
+      "dns": [
+        "cmail\\d",
+        "createsend"
+      ],
+      "page": [
+        "createsend"
+      ]
+    },
+    {
+      "name": "Zoho Campaigns",
+      "dns": [
+        "zcsend"
+      ]
+    },
+    {
+      "name": "Marigold",
+      "dns": [
+        "alterian",
+        "cheetahmail",
+        "cheetahdigital"
+      ]
+    },
+    {
+      "name": "Optimizely Data Platform",
+      "dns": [
+        "epidm\\.net"
+      ]
+    },
+    {
+      "name": "Mapp",
+      "dns": [
+        "m-pages",
+        "\\bmapp\\b"
+      ]
+    },
+    {
+      "name": "Selligent",
+      "dns": [
+        "slgnt\\.eu",
+        "selligent"
+      ]
+    },
+    {
+      "name": "Listrak",
+      "dns": [
+        "listrak"
+      ],
+      "page": [
+        "listrak"
+      ]
+    },
     {
       "name": "Dotdigital",
-      "dns": ["dotmailer", "dotdigital", "dmtrk"],
-      "page": ["dotdigital", "dotmailer", "dmtrk", "trackedlink"]
+      "dns": [
+        "dotmailer",
+        "dotdigital",
+        "dmtrk"
+      ],
+      "page": [
+        "dotdigital",
+        "dotmailer",
+        "dmtrk",
+        "trackedlink"
+      ]
     },
-    {"name": "Braze", "dns": ["braze"], "page": ["braze", "appboy"]},
-    {"name": "Cordial", "dns": ["cordial"], "page": ["cordial"]},
-    {"name": "Attentive", "dns": ["attentivemobile"], "page": ["attentivemobile", "attn\\.tv"]},
-    {"name": "Brevo", "dns": ["sendinblue", "brevo"], "page": ["sendinblue", "brevo"]},
-    {"name": "Omnisend", "dns": ["omnisend"], "page": ["omnisend"]},
-    {"name": "ActiveCampaign", "dns": ["activecampaign"], "page": ["activecampaign"]},
-    {"name": "Ortto", "dns": ["ortto"], "page": ["ortto"]},
-    {"name": "Drip", "dns": ["getdrip"], "page": ["drip\\.com", "getdrip"]},
-    {"name": "MailerLite", "dns": ["mailerlite"], "page": ["mailerlite"]},
-    {"name": "Acoustic", "dns": ["silverpop"], "page": ["acoustic", "silverpop"]},
-    {"name": "Voyado", "dns": ["voyado"], "page": ["voyado"]},
-    {"name": "Insider", "dns": ["useinsider"], "page": ["useinsider"]},
-    {"name": "Wunderkind", "page": ["wunderkind", "bounceexchange"]}
+    {
+      "name": "Braze",
+      "dns": [
+        "\\bbraze"
+      ],
+      "page": [
+        "\\bbraze",
+        "appboy"
+      ]
+    },
+    {
+      "name": "Cordial",
+      "dns": [
+        "\\bcordial"
+      ],
+      "page": [
+        "\\bcordial"
+      ]
+    },
+    {
+      "name": "Attentive",
+      "dns": [
+        "attentivemobile"
+      ],
+      "page": [
+        "attentivemobile",
+        "attn\\.tv"
+      ]
+    },
+    {
+      "name": "Brevo",
+      "dns": [
+        "sendinblue",
+        "\\bbrevo"
+      ],
+      "page": [
+        "sendinblue",
+        "\\bbrevo"
+      ]
+    },
+    {
+      "name": "Omnisend",
+      "dns": [
+        "omnisend"
+      ],
+      "page": [
+        "omnisend"
+      ]
+    },
+    {
+      "name": "ActiveCampaign",
+      "dns": [
+        "activecampaign"
+      ],
+      "page": [
+        "activecampaign"
+      ]
+    },
+    {
+      "name": "Ortto",
+      "dns": [
+        "\\bortto"
+      ],
+      "page": [
+        "\\bortto"
+      ]
+    },
+    {
+      "name": "Drip",
+      "dns": [
+        "getdrip"
+      ],
+      "page": [
+        "\\bdrip\\.com",
+        "getdrip"
+      ]
+    },
+    {
+      "name": "MailerLite",
+      "dns": [
+        "mailerlite"
+      ],
+      "page": [
+        "mailerlite"
+      ]
+    },
+    {
+      "name": "Acoustic",
+      "dns": [
+        "silverpop"
+      ],
+      "page": [
+        "acoustic",
+        "silverpop"
+      ]
+    },
+    {
+      "name": "Voyado",
+      "dns": [
+        "voyado"
+      ],
+      "page": [
+        "voyado"
+      ]
+    },
+    {
+      "name": "Insider",
+      "dns": [
+        "useinsider"
+      ],
+      "page": [
+        "useinsider"
+      ]
+    },
+    {
+      "name": "Wunderkind",
+      "page": [
+        "wunderkind",
+        "bounceexchange"
+      ]
+    }
   ]
 }
