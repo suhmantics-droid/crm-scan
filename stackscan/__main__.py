@@ -126,10 +126,14 @@ def cmd_benchmark(args):
         sys.exit("truth CSV needs Domain and Vendors columns "
                  "(Vendors semicolon-separated, ! prefix = known absent)")
 
-    hits = misses = violations = 0
+    hits = misses = violations = skipped = 0
     extras_all = []
     for row in rows:
         domain = resolve_brand_domain("", row["Domain"])
+        if not domain:
+            skipped += 1
+            print(f"SKIP  {row['Domain']!r}: not a resolvable domain")
+            continue
         expected, forbidden = set(), set()
         for v in row["Vendors"].split(";"):
             v = v.strip()
@@ -162,6 +166,8 @@ def cmd_benchmark(args):
     print(f"\nRecall: {hits}/{total} known vendors detected"
           + (f" ({hits / total:.0%})" if total else ""))
     print(f"Hard false positives (known-absent detected): {violations}")
+    if skipped:
+        print(f"Rows skipped (unresolvable domain): {skipped}")
     if extras_all:
         print("Unverified extras (judge these by hand; each one is either "
               "a win or a fingerprint bug):")
