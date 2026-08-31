@@ -1,0 +1,51 @@
+rank,customer,problem,product,price_gbp,demand_15,competition_10,margin_15,differentiation_15,catalogue_10,search_intent_10,production_speed_5,upsell_5,shopify_5,policy_ip_10,total_100,policy_risk,ip_risk,production_time,launch_cost_gbp
+1,UK sole traders,tax records dread + MTD,UK Sole Trader Bookkeeping + Self Assessment Tracker (Sheets+Excel),16.99,13,7,14,13,9,9,4,5,4,10,88,LOW,LOW,2-3 days,~1
+2,UK freelancers/consultants,money admin across tools,Freelancer Bookkeeping + Invoice Tracker UK,14.99,12,7,14,12,9,9,4,5,4,10,86,LOW,LOW,1-2 days,~1
+3,Cleaning businesses,no back office,Cleaning Business Kit: quote calculator + job tracker + money,12.99,11,8,14,13,9,8,4,5,3,10,85,LOW,LOW,2 days,~1
+4,Solo sellers/freelancers,leads slip through,Simple CRM + Follow-up Engine (Sheets+Excel),14.99,10,8,14,14,9,8,4,5,4,10,84,LOW,LOW,2 days,~1
+5,UK landlords,MTD + Section 24 complexity,UK Landlord Income & Expense Tracker (MTD-ready records),19.99,12,6,14,11,8,9,3,5,4,10,82,LOW,LOW,3 days,~1
+6,Vinted/eBay/Depop resellers,HMRC reporting anxiety,Reseller Profit + Tax Threshold Tracker UK,9.99,11,8,13,12,8,8,4,4,3,10,81,LOW,LOW,1-2 days,~1
+7,Dog groomers,client cards + money on paper,Dog Groomer Client + Booking + Income Kit,12.99,9,9,14,12,8,7,4,5,3,10,81,LOW,LOW,1-2 days,~1
+8,Salon/beauty pros,rebooking + records chaos,Salon Client Cards + Income Tracker,12.99,10,7,14,11,8,7,4,5,3,10,79,LOW,LOW,1-2 days,~1
+9,UK self employed,what do I owe,Self Assessment Tax Estimator (set-aside calculator),9.99,11,7,13,11,6,9,4,4,3,10,78,LOW (no advice claims),LOW,1-2 days,~1
+10,Trades (handyman/decorator),quoting + jobs + getting paid,Trades Job Sheet + Quote + Invoice Kit,12.99,10,8,13,11,8,7,4,4,3,10,78,LOW,LOW,2 days,~1
+11,Service businesses,undercharging,Day Rate + Job Pricing Calculator UK,8.99,9,8,13,11,7,8,5,4,3,10,78,LOW,LOW,1 day,~1
+12,Gig drivers/couriers,mileage + tax,Driver Income + HMRC Mileage Tracker,8.99,9,8,13,10,7,8,5,4,3,10,77,LOW,LOW,1 day,~1
+13,All UK self employed,claimable mileage,HMRC Mileage Log (entry product),4.99,9,7,11,9,7,9,5,5,3,10,75,LOW,LOW,0.5 day,~1
+14,Cake makers,pricing by guesswork,Cake Pricing Calculator,7.99,9,7,13,9,7,8,5,4,3,10,75,LOW,LOW,1 day,~1
+15,Etsy sellers,bookkeeping,Etsy Seller Bookkeeping UK Edition,14.99,11,5,13,9,7,8,4,5,3,10,75,LOW,LOW,2 days,~1
+16,Market traders/craft fairs,cash takings chaos,Craft Fair + Market Trader Money Kit,9.99,8,8,13,10,7,7,4,4,3,10,74,LOW,LOW,1 day,~1
+17,Gardeners,no back office,Gardening Business Kit,12.99,8,8,13,11,8,6,4,4,3,10,75,LOW,LOW,1-2 days (clone of #3),~1
+18,Airbnb/holiday-let hosts UK,tax rule changes + bookings,Holiday Let Income Tracker UK,14.99,9,6,13,10,7,7,3,4,3,10,72,LOW,LOW,2 days,~1
+19,Personal trainers,client + payment tracking,PT Client + Session Pack Tracker,12.99,8,6,13,9,7,7,4,4,3,10,71,LOW,LOW,1-2 days,~1
+20,Tutors/music teachers,students + invoicing,Tutor Business Kit,12.99,8,7,13,9,7,6,4,4,3,10,71,LOW,LOW,1-2 days,~1
+21,Recruiters (solo/agency),candidate pipeline,Recruiter Candidate Pipeline Tracker,14.99,7,8,13,12,6,5,4,4,3,10,72,LOW,LOW,1-2 days (CRM clone),~1
+22,Estate agents,lead follow-up,Estate Agent Lead Tracker,14.99,7,7,13,10,6,5,4,4,3,10,69,LOW,LOW,1 day (CRM clone),~1
+23,Coaches,business admin,Coach Business Admin Kit (non-clinical),14.99,8,5,13,8,7,6,4,4,3,10,68,LOW,LOW,2 days,~1
+24,Small businesses,cash blindness,Simple Cash Flow Forecast UK,9.99,8,7,13,9,6,6,4,4,3,10,70,LOW,LOW,1 day,~1
+25,Sales reps,commission opacity,Commission Calculator + Tracker,9.99,7,8,13,10,5,5,4,4,3,10,69,LOW,LOW,1 day,~1
+26,All small businesses,late payments,Invoice Tracker + Late Payment Chase System,9.99,8,7,13,10,6,6,4,4,3,10,71,LOW,LOW,1 day,~1
+27,Wedding photographers,pricing + client comms,Photographer Pricing Guide + Email Scripts (copy-led),16.99,9,4,13,8,6,7,3,4,3,9,66,LOW,MEDIUM (fonts/assets),2-3 days,~1
+28,Virtual assistants,client + task chaos,VA Business Kit,12.99,7,6,13,8,7,6,4,4,3,10,68,LOW,LOW,1-2 days,~1
+29,Charity/club treasurers,simple accounts,Treasurer Accounts Sheet,9.99,6,9,13,9,5,5,4,3,2,10,66,LOW,LOW,1 day,~1
+30,Photographers,client workflow,Photography Client Workflow Tracker,12.99,7,5,13,8,6,6,4,4,3,10,66,LOW,LOW,1-2 days,~1
+31,Candle/soap makers,costing + stock,Maker Costing + Inventory Sheet,9.99,7,6,13,8,6,6,4,4,3,10,67,LOW,LOW,1 day,~1
+32,UK sole traders,want all-in-one workspace,Notion UK Sole Trader Business OS,19.99,7,6,13,8,6,5,3,4,3,9,64,LOW,LOW,3 days,~1
+33,Social media managers,client juggling,SMM Client Tracker,12.99,6,6,13,8,6,5,4,4,3,10,65,LOW,LOW,1 day (CRM clone),~1
+34,Small retailers,stock control,Simple Stock Control Sheet,12.99,7,6,13,7,6,6,3,4,3,10,65,LOW,LOW,2 days,~1
+35,Food trucks/street food,menu costing,Street Food Costing Kit,12.99,6,7,13,8,5,5,4,4,3,10,65,LOW,LOW,1-2 days,~1
+36,Micro employers,holiday/rota/timesheets,HR-lite UK Pack,14.99,7,6,13,7,6,5,3,4,3,8,62,MEDIUM (employment law adjacency),LOW,2 days,~1
+37,New founders,business planning,One-Page Business Plan Pack,7.99,6,5,12,6,5,5,5,3,3,10,60,LOW,LOW,1 day,~1
+38,Service providers,onboarding clients,Client Onboarding Packet (verticalized Canva),14.99,8,3,12,6,7,6,3,4,3,8,60,LOW-MEDIUM,MEDIUM (Canva licence),2 days,~1
+39,Engaged couples,wedding budget,UK Wedding Budget Spreadsheet,7.99,8,3,12,6,5,7,4,3,3,10,61,LOW,LOW,1 day,~1
+40,UK consumers,budgeting,Premium UK Budget Planner (paycheck-cycle),9.99,10,2,12,5,6,7,4,3,3,10,62,LOW,LOW,1-2 days,~1
+41,UK consumers,net worth/FIRE,UK Net Worth + FIRE Tracker,9.99,7,4,12,6,5,6,4,3,3,10,60,LOW,LOW,1 day,~1
+42,UK consumers,debt,UK Debt Payoff Tracker,7.99,7,3,12,5,5,6,4,3,3,10,58,LOW,LOW,1 day,~1
+43,Job seekers,application chaos,Job Search Tracker + Interview Prep,7.99,7,4,12,6,5,6,4,3,2,10,59,LOW,LOW,1 day,~1
+44,Small businesses,content chaos,Content Calendar Kit,9.99,7,3,12,4,5,5,4,3,3,9,55,LOW,MEDIUM,1 day,~1
+45,Founders,fundraising,Pitch Deck Template,14.99,5,3,12,4,4,4,3,3,3,9,50,LOW,MEDIUM,2 days,~1
+46,Job seekers,CV,CV Template Pack,5.99,10,1,11,2,4,7,4,2,2,9,52,LOW,MEDIUM,1 day,~1
+47,ADHD adults,planning,ADHD Planner,7.99,10,1,12,2,5,6,3,3,2,9,53,LOW,LOW,2 days,~1
+48,Planner users,digital planning,Generic Digital Planner,6.99,9,1,12,1,4,5,2,3,2,9,48,LOW,LOW,3 days,~1
+49,Crafters,cut files,SVG Bundle,3.99,10,1,10,1,5,6,3,2,2,4,44,MEDIUM,HIGH,ongoing,~1
+50,AI users,prompts,Prompt Pack,4.99,6,2,10,2,3,4,5,2,2,0,36,HIGH (reported prohibited),LOW,0.5 day,~1

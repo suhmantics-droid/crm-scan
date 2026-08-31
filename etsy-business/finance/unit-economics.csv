@@ -1,0 +1,11 @@
+item,price_gbp,listing_renewal,transaction_6.5pct,processing_4pct_plus_20p,regulatory_0.48pct,vat_on_fees_20pct,total_fees_no_ads,net_no_ads,net_margin_no_ads,net_if_offsite_ad_15pct,net_margin_offsite
+HMRC Mileage Log,4.99,0.15,0.32,0.40,0.02,0.18,1.08,3.91,78.4%,3.01,60.3%
+Tax Estimator / Invoice Chase,9.99,0.15,0.65,0.60,0.05,0.29,1.74,8.25,82.6%,6.45,64.6%
+Trade kits / Salon / Groomer,12.99,0.15,0.84,0.72,0.06,0.36,2.13,10.86,83.6%,8.52,65.6%
+Freelancer / CRM,14.99,0.15,0.97,0.80,0.07,0.40,2.39,12.60,84.1%,9.90,66.0%
+Flagship bookkeeping,16.99,0.15,1.10,0.88,0.08,0.44,2.66,14.33,84.3%,11.27,66.3%
+Landlord tracker,19.99,0.15,1.30,1.00,0.10,0.51,3.05,16.94,84.7%,13.34,66.7%
+Starter bundle,24.99,0.15,1.62,1.20,0.12,0.62,3.71,21.28,85.1%,16.78,67.1%
+Run Your Trade bundle,29.99,0.15,1.95,1.40,0.14,0.73,4.37,25.62,85.4%,20.22,67.4%
+Mega bundle,34.99,0.15,2.27,1.60,0.17,0.84,5.03,29.96,85.6%,23.66,67.6%
+NOTES,"Fees per research/etsy-policy.md: listing/renewal GBP0.15 per sale; transaction 6.5%; UK processing 4%+GBP0.20; UK regulatory operating fee 0.48% (from Jun 2026); 20% VAT applied to all fees (seller below VAT threshold); offsite ads 15% (sub-GBP8k tier) applied to sale price with VAT on that fee too. Share & Save sales (self-driven traffic) improve these by 4 points of transaction fee. All REPORTED rates; reverify in Seller Dashboard at signup.",,,,,,,,,,

@@ -1,0 +1,501 @@
+keyword,cluster,intent,competition,trend,relevance_1to10,product,priority_1to5,source,confidence
+bookkeeping spreadsheet,CORE,buyer,high,stable,10,flagship bookkeeping,1,etsy.com/market/bookkeeping_spreadsheet,HARVESTED
+bookkeeping template,CORE,buyer,high,stable,10,flagship bookkeeping,1,etsy market pages,HARVESTED
+small business bookkeeping template,CORE,buyer,high,stable,10,flagship bookkeeping,1,etsy listing 1245698332,HARVESTED
+accounting spreadsheet small business,CORE,buyer,high,stable,9,flagship bookkeeping,2,etsy market pages,HARVESTED
+income and expense tracker,CORE,buyer,high,stable,9,expense tracker,2,etsy market pages,HARVESTED
+expense tracker spreadsheet,CORE,buyer,high,stable,9,expense tracker,2,etsy market pages,HARVESTED
+profit tracker spreadsheet,CORE,buyer,medium,stable,8,flagship bookkeeping,2,ebay/etsy titles,HARVESTED
+google sheets budget,CORE,buyer,very high,seasonal jan,6,later consumer line,4,"eRank via snazzydesignsforever.com: 1324 searches/mo, 112% CTR",HARVESTED
+budget spreadsheet,CORE,buyer,very high,seasonal jan,6,later consumer line,4,etsy market pages,HARVESTED
+digital products,CORE,browse,very high,"rising (#6 Q2 2026, was #45)",4,shop-level,5,help.erank.com/blog/top-etsy-searches-q2-2026,HARVESTED
+sole trader excel spreadsheet,PROFESSIONAL,buyer,medium,seasonal jan,10,flagship bookkeeping,1,etsy.com/market/sole_trader_excel_spreadsheet,HARVESTED
+self employed uk spreadsheet,PROFESSIONAL,buyer,medium,seasonal jan,10,flagship bookkeeping,1,etsy.com/uk/market/self_employed_uk_spreadsheet,HARVESTED
+uk self employed bookkeeping spreadsheet,PROFESSIONAL,buyer,medium,seasonal jan,10,flagship bookkeeping,1,etsy listing 4315166527,HARVESTED
+self assessment spreadsheet,PROBLEM,buyer,medium,seasonal jan,10,tax tracker,1,etsy listing 1538866641,HARVESTED
+uk self assessment tax calculator,PROBLEM,buyer,medium,seasonal jan,10,tax calculator,1,etsy listing 4432091815,HARVESTED
+hmrc sole trader accounts,PROFESSIONAL,buyer,low,seasonal jan,10,flagship bookkeeping,1,etsy listing 4315166527,HARVESTED
+sole trader tax return template,PROBLEM,buyer,medium,seasonal jan,10,tax tracker,1,etsy listing 4373164546,HARVESTED
+landlord spreadsheet,NICHE,buyer,medium,stable,8,landlord tracker,2,etsy.com/uk/market/landlord_spreadsheet,HARVESTED
+rental property spreadsheet,NICHE,buyer,medium,stable,8,landlord tracker,2,etsy listing 1230615008,HARVESTED
+rental income and expense tracker,NICHE,buyer,medium,stable,8,landlord tracker,2,etsy listing 814979267,HARVESTED
+landlord property tracker uk,NICHE,buyer,medium,rising (MTD),9,landlord tracker,2,etsy listing 4481759113,HARVESTED
+sales tracker,CORE,buyer,high,stable,8,sales tracker,2,etsy.com/market/sales_tracker,HARVESTED
+sales lead tracker,CORE,buyer,medium,stable,9,lead tracker,1,etsy.com/market/sales_lead_tracker,HARVESTED
+lead tracker,CORE,buyer,medium,stable,9,lead tracker,1,etsy.com/market/lead_tracker,HARVESTED
+crm spreadsheet,CORE,buyer,medium,stable,9,crm sheet,1,etsy listing 1363873180,HARVESTED
+crm template,CORE,buyer,medium,stable,9,crm sheet,1,etsy listing 1363873180,HARVESTED
+client tracker,CORE,buyer,medium,stable,9,crm sheet,2,etsy listing 4389160902,HARVESTED
+lead tracker for coaches,NICHE,buyer,low,stable,8,crm sheet coach edition,2,etsy listing 1735414707,HARVESTED
+sales pipeline spreadsheet,SOLUTION,buyer,low,stable,9,pipeline tracker,1,etsy listing 1735414707 tags,HARVESTED
+cleaning business invoice,NICHE,buyer,medium,stable,8,cleaning kit,2,etsy.com/market/cleaning_business_invoices,HARVESTED
+cleaning business estimate template,NICHE,buyer,low,stable,8,cleaning kit,2,etsy.com/market/cleaning_business_estimate_template,HARVESTED
+cleaning service quote template,NICHE,buyer,low,stable,8,cleaning kit,2,etsy.com/market/cleaning_service_quote_template,HARVESTED
+house cleaning quote sheet,LONG TAIL,buyer,low,stable,7,cleaning kit,3,etsy.com/market/house_cleaning_quote_sheet,HARVESTED
+client welcome packet,CORE,buyer,high,stable,6,onboarding kit (later),3,etsy listing 1224113456,HARVESTED
+client onboarding template,CORE,buyer,high,stable,6,onboarding kit (later),3,etsy listing 4530601440,HARVESTED
+coaching welcome packet,NICHE,buyer,medium,stable,5,onboarding kit (later),4,etsy listing 1095023877,HARVESTED
+photography pricing guide,NICHE,buyer,high,stable,5,wedding vendor line (later),4,etsy.com/market/photography_pricing_guide,HARVESTED
+wedding photography pricing template,NICHE,buyer,high,stable,5,wedding vendor line (later),4,etsy.com/market/wedding_photography_pricing_template,HARVESTED
+wedding photography email template,NICHE,buyer,medium,stable,5,wedding vendor line (later),4,etsy.com/market/wedding_photography_email_template,HARVESTED
+etsy seller bookkeeping spreadsheet,NICHE,buyer,high,stable,7,etsy seller edition (later),3,etsy listing 1762253018,HARVESTED
+etsy seller spreadsheet,NICHE,buyer,high,stable,7,etsy seller edition (later),3,etsy.com/market/seller_spreadsheet,HARVESTED
+notion template,CORE,browse,high,stable,4,format option,5,kupkaike.com 2026 report,HARVESTED
+business planner,CORE,browse,very high,stable,5,avoid generic,5,etsy.com/market/business_planner,HARVESTED
+side hustle tracker,NICHE,buyer,medium,stable,6,reseller tracker,3,etsy.com/market/side_hustle,HARVESTED
+spreadsheet template,CORE,browse,very high,stable,6,shop-level,4,etsy.com/market/spreadsheet_template,HARVESTED
+png,CORE,browse,very high,rising,1,not our market (context),5,help.erank.com fastest-growing summer 2026 ~42k/mo May,HARVESTED
+cleaning business bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,cleaning business vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaning business income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,cleaning business vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaning business expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaning business vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaning business invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaning business vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaning business price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaning business vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaning business quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaning business vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaning business client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,cleaning business vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaning business booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaning business vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaner bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,cleaner vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaner income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,cleaner vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaner expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaner vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaner invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaner vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaner price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaner vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaner quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaner vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaner client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,cleaner vertical,2,constructed from harvested roots,CONSTRUCTED
+cleaner booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,cleaner vertical,2,constructed from harvested roots,CONSTRUCTED
+gardener bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,gardener vertical,2,constructed from harvested roots,CONSTRUCTED
+gardener income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,gardener vertical,2,constructed from harvested roots,CONSTRUCTED
+gardener expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardener vertical,2,constructed from harvested roots,CONSTRUCTED
+gardener invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardener vertical,2,constructed from harvested roots,CONSTRUCTED
+gardener price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardener vertical,2,constructed from harvested roots,CONSTRUCTED
+gardener quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardener vertical,2,constructed from harvested roots,CONSTRUCTED
+gardener client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,gardener vertical,2,constructed from harvested roots,CONSTRUCTED
+gardener booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardener vertical,2,constructed from harvested roots,CONSTRUCTED
+gardening business bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,gardening business vertical,3,constructed from harvested roots,CONSTRUCTED
+gardening business income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,gardening business vertical,3,constructed from harvested roots,CONSTRUCTED
+gardening business expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardening business vertical,3,constructed from harvested roots,CONSTRUCTED
+gardening business invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardening business vertical,3,constructed from harvested roots,CONSTRUCTED
+gardening business price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardening business vertical,3,constructed from harvested roots,CONSTRUCTED
+gardening business quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardening business vertical,3,constructed from harvested roots,CONSTRUCTED
+gardening business client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,gardening business vertical,3,constructed from harvested roots,CONSTRUCTED
+gardening business booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,gardening business vertical,3,constructed from harvested roots,CONSTRUCTED
+window cleaner bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,window cleaner vertical,3,constructed from harvested roots,CONSTRUCTED
+window cleaner income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,window cleaner vertical,3,constructed from harvested roots,CONSTRUCTED
+window cleaner expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,window cleaner vertical,3,constructed from harvested roots,CONSTRUCTED
+window cleaner invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,window cleaner vertical,3,constructed from harvested roots,CONSTRUCTED
+window cleaner price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,window cleaner vertical,3,constructed from harvested roots,CONSTRUCTED
+window cleaner quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,window cleaner vertical,3,constructed from harvested roots,CONSTRUCTED
+window cleaner client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,window cleaner vertical,3,constructed from harvested roots,CONSTRUCTED
+window cleaner booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,window cleaner vertical,3,constructed from harvested roots,CONSTRUCTED
+handyman bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,handyman vertical,3,constructed from harvested roots,CONSTRUCTED
+handyman income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,handyman vertical,3,constructed from harvested roots,CONSTRUCTED
+handyman expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,handyman vertical,3,constructed from harvested roots,CONSTRUCTED
+handyman invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,handyman vertical,3,constructed from harvested roots,CONSTRUCTED
+handyman price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,handyman vertical,3,constructed from harvested roots,CONSTRUCTED
+handyman quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,handyman vertical,3,constructed from harvested roots,CONSTRUCTED
+handyman client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,handyman vertical,3,constructed from harvested roots,CONSTRUCTED
+handyman booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,handyman vertical,3,constructed from harvested roots,CONSTRUCTED
+painter decorator bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,painter decorator vertical,3,constructed from harvested roots,CONSTRUCTED
+painter decorator income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,painter decorator vertical,3,constructed from harvested roots,CONSTRUCTED
+painter decorator expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,painter decorator vertical,3,constructed from harvested roots,CONSTRUCTED
+painter decorator invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,painter decorator vertical,3,constructed from harvested roots,CONSTRUCTED
+painter decorator price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,painter decorator vertical,3,constructed from harvested roots,CONSTRUCTED
+painter decorator quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,painter decorator vertical,3,constructed from harvested roots,CONSTRUCTED
+painter decorator client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,painter decorator vertical,3,constructed from harvested roots,CONSTRUCTED
+painter decorator booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,painter decorator vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile mechanic bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,mobile mechanic vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile mechanic income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,mobile mechanic vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile mechanic expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile mechanic vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile mechanic invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile mechanic vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile mechanic price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile mechanic vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile mechanic quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile mechanic vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile mechanic client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,mobile mechanic vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile mechanic booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile mechanic vertical,3,constructed from harvested roots,CONSTRUCTED
+electrician bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,electrician vertical,3,constructed from harvested roots,CONSTRUCTED
+electrician income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,electrician vertical,3,constructed from harvested roots,CONSTRUCTED
+electrician expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,electrician vertical,3,constructed from harvested roots,CONSTRUCTED
+electrician invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,electrician vertical,3,constructed from harvested roots,CONSTRUCTED
+electrician price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,electrician vertical,3,constructed from harvested roots,CONSTRUCTED
+electrician quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,electrician vertical,3,constructed from harvested roots,CONSTRUCTED
+electrician client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,electrician vertical,3,constructed from harvested roots,CONSTRUCTED
+electrician booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,electrician vertical,3,constructed from harvested roots,CONSTRUCTED
+plumber bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,plumber vertical,3,constructed from harvested roots,CONSTRUCTED
+plumber income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,plumber vertical,3,constructed from harvested roots,CONSTRUCTED
+plumber expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,plumber vertical,3,constructed from harvested roots,CONSTRUCTED
+plumber invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,plumber vertical,3,constructed from harvested roots,CONSTRUCTED
+plumber price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,plumber vertical,3,constructed from harvested roots,CONSTRUCTED
+plumber quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,plumber vertical,3,constructed from harvested roots,CONSTRUCTED
+plumber client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,plumber vertical,3,constructed from harvested roots,CONSTRUCTED
+plumber booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,plumber vertical,3,constructed from harvested roots,CONSTRUCTED
+dog groomer bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,dog groomer vertical,2,constructed from harvested roots,CONSTRUCTED
+dog groomer income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,dog groomer vertical,2,constructed from harvested roots,CONSTRUCTED
+dog groomer expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog groomer vertical,2,constructed from harvested roots,CONSTRUCTED
+dog groomer invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog groomer vertical,2,constructed from harvested roots,CONSTRUCTED
+dog groomer price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog groomer vertical,2,constructed from harvested roots,CONSTRUCTED
+dog groomer quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog groomer vertical,2,constructed from harvested roots,CONSTRUCTED
+dog groomer client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,dog groomer vertical,2,constructed from harvested roots,CONSTRUCTED
+dog groomer booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog groomer vertical,2,constructed from harvested roots,CONSTRUCTED
+dog walker bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,dog walker vertical,3,constructed from harvested roots,CONSTRUCTED
+dog walker income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,dog walker vertical,3,constructed from harvested roots,CONSTRUCTED
+dog walker expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog walker vertical,3,constructed from harvested roots,CONSTRUCTED
+dog walker invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog walker vertical,3,constructed from harvested roots,CONSTRUCTED
+dog walker price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog walker vertical,3,constructed from harvested roots,CONSTRUCTED
+dog walker quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog walker vertical,3,constructed from harvested roots,CONSTRUCTED
+dog walker client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,dog walker vertical,3,constructed from harvested roots,CONSTRUCTED
+dog walker booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,dog walker vertical,3,constructed from harvested roots,CONSTRUCTED
+pet sitter bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,pet sitter vertical,3,constructed from harvested roots,CONSTRUCTED
+pet sitter income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,pet sitter vertical,3,constructed from harvested roots,CONSTRUCTED
+pet sitter expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,pet sitter vertical,3,constructed from harvested roots,CONSTRUCTED
+pet sitter invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,pet sitter vertical,3,constructed from harvested roots,CONSTRUCTED
+pet sitter price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,pet sitter vertical,3,constructed from harvested roots,CONSTRUCTED
+pet sitter quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,pet sitter vertical,3,constructed from harvested roots,CONSTRUCTED
+pet sitter client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,pet sitter vertical,3,constructed from harvested roots,CONSTRUCTED
+pet sitter booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,pet sitter vertical,3,constructed from harvested roots,CONSTRUCTED
+hairdresser bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,hairdresser vertical,2,constructed from harvested roots,CONSTRUCTED
+hairdresser income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,hairdresser vertical,2,constructed from harvested roots,CONSTRUCTED
+hairdresser expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,hairdresser vertical,2,constructed from harvested roots,CONSTRUCTED
+hairdresser invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,hairdresser vertical,2,constructed from harvested roots,CONSTRUCTED
+hairdresser price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,hairdresser vertical,2,constructed from harvested roots,CONSTRUCTED
+hairdresser quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,hairdresser vertical,2,constructed from harvested roots,CONSTRUCTED
+hairdresser client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,hairdresser vertical,2,constructed from harvested roots,CONSTRUCTED
+hairdresser booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,hairdresser vertical,2,constructed from harvested roots,CONSTRUCTED
+mobile hairdresser bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,mobile hairdresser vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile hairdresser income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,mobile hairdresser vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile hairdresser expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile hairdresser vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile hairdresser invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile hairdresser vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile hairdresser price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile hairdresser vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile hairdresser quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile hairdresser vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile hairdresser client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,mobile hairdresser vertical,3,constructed from harvested roots,CONSTRUCTED
+mobile hairdresser booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,mobile hairdresser vertical,3,constructed from harvested roots,CONSTRUCTED
+nail tech bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,nail tech vertical,3,constructed from harvested roots,CONSTRUCTED
+nail tech income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,nail tech vertical,3,constructed from harvested roots,CONSTRUCTED
+nail tech expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,nail tech vertical,3,constructed from harvested roots,CONSTRUCTED
+nail tech invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,nail tech vertical,3,constructed from harvested roots,CONSTRUCTED
+nail tech price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,nail tech vertical,3,constructed from harvested roots,CONSTRUCTED
+nail tech quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,nail tech vertical,3,constructed from harvested roots,CONSTRUCTED
+nail tech client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,nail tech vertical,3,constructed from harvested roots,CONSTRUCTED
+nail tech booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,nail tech vertical,3,constructed from harvested roots,CONSTRUCTED
+lash tech bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,lash tech vertical,3,constructed from harvested roots,CONSTRUCTED
+lash tech income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,lash tech vertical,3,constructed from harvested roots,CONSTRUCTED
+lash tech expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,lash tech vertical,3,constructed from harvested roots,CONSTRUCTED
+lash tech invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,lash tech vertical,3,constructed from harvested roots,CONSTRUCTED
+lash tech price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,lash tech vertical,3,constructed from harvested roots,CONSTRUCTED
+lash tech quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,lash tech vertical,3,constructed from harvested roots,CONSTRUCTED
+lash tech client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,lash tech vertical,3,constructed from harvested roots,CONSTRUCTED
+lash tech booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,lash tech vertical,3,constructed from harvested roots,CONSTRUCTED
+beautician bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,beautician vertical,3,constructed from harvested roots,CONSTRUCTED
+beautician income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,beautician vertical,3,constructed from harvested roots,CONSTRUCTED
+beautician expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,beautician vertical,3,constructed from harvested roots,CONSTRUCTED
+beautician invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,beautician vertical,3,constructed from harvested roots,CONSTRUCTED
+beautician price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,beautician vertical,3,constructed from harvested roots,CONSTRUCTED
+beautician quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,beautician vertical,3,constructed from harvested roots,CONSTRUCTED
+beautician client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,beautician vertical,3,constructed from harvested roots,CONSTRUCTED
+beautician booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,beautician vertical,3,constructed from harvested roots,CONSTRUCTED
+barber bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,barber vertical,3,constructed from harvested roots,CONSTRUCTED
+barber income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,barber vertical,3,constructed from harvested roots,CONSTRUCTED
+barber expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,barber vertical,3,constructed from harvested roots,CONSTRUCTED
+barber invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,barber vertical,3,constructed from harvested roots,CONSTRUCTED
+barber price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,barber vertical,3,constructed from harvested roots,CONSTRUCTED
+barber quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,barber vertical,3,constructed from harvested roots,CONSTRUCTED
+barber client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,barber vertical,3,constructed from harvested roots,CONSTRUCTED
+barber booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,barber vertical,3,constructed from harvested roots,CONSTRUCTED
+personal trainer bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,personal trainer vertical,3,constructed from harvested roots,CONSTRUCTED
+personal trainer income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,personal trainer vertical,3,constructed from harvested roots,CONSTRUCTED
+personal trainer expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,personal trainer vertical,3,constructed from harvested roots,CONSTRUCTED
+personal trainer invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,personal trainer vertical,3,constructed from harvested roots,CONSTRUCTED
+personal trainer price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,personal trainer vertical,3,constructed from harvested roots,CONSTRUCTED
+personal trainer quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,personal trainer vertical,3,constructed from harvested roots,CONSTRUCTED
+personal trainer client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,personal trainer vertical,3,constructed from harvested roots,CONSTRUCTED
+personal trainer booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,personal trainer vertical,3,constructed from harvested roots,CONSTRUCTED
+tutor bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,tutor vertical,3,constructed from harvested roots,CONSTRUCTED
+tutor income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,tutor vertical,3,constructed from harvested roots,CONSTRUCTED
+tutor expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,tutor vertical,3,constructed from harvested roots,CONSTRUCTED
+tutor invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,tutor vertical,3,constructed from harvested roots,CONSTRUCTED
+tutor price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,tutor vertical,3,constructed from harvested roots,CONSTRUCTED
+tutor quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,tutor vertical,3,constructed from harvested roots,CONSTRUCTED
+tutor client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,tutor vertical,3,constructed from harvested roots,CONSTRUCTED
+tutor booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,tutor vertical,3,constructed from harvested roots,CONSTRUCTED
+photographer bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,photographer vertical,3,constructed from harvested roots,CONSTRUCTED
+photographer income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,photographer vertical,3,constructed from harvested roots,CONSTRUCTED
+photographer expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,photographer vertical,3,constructed from harvested roots,CONSTRUCTED
+photographer invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,photographer vertical,3,constructed from harvested roots,CONSTRUCTED
+photographer price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,photographer vertical,3,constructed from harvested roots,CONSTRUCTED
+photographer quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,photographer vertical,3,constructed from harvested roots,CONSTRUCTED
+photographer client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,photographer vertical,3,constructed from harvested roots,CONSTRUCTED
+virtual assistant bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,virtual assistant vertical,2,constructed from harvested roots,CONSTRUCTED
+virtual assistant income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,virtual assistant vertical,2,constructed from harvested roots,CONSTRUCTED
+virtual assistant expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,virtual assistant vertical,2,constructed from harvested roots,CONSTRUCTED
+virtual assistant invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,virtual assistant vertical,2,constructed from harvested roots,CONSTRUCTED
+virtual assistant price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,virtual assistant vertical,2,constructed from harvested roots,CONSTRUCTED
+virtual assistant quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,virtual assistant vertical,2,constructed from harvested roots,CONSTRUCTED
+virtual assistant client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,virtual assistant vertical,2,constructed from harvested roots,CONSTRUCTED
+virtual assistant booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,virtual assistant vertical,2,constructed from harvested roots,CONSTRUCTED
+freelancer bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,freelancer vertical,2,constructed from harvested roots,CONSTRUCTED
+freelancer income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,freelancer vertical,2,constructed from harvested roots,CONSTRUCTED
+freelancer expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,freelancer vertical,2,constructed from harvested roots,CONSTRUCTED
+freelancer invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,freelancer vertical,2,constructed from harvested roots,CONSTRUCTED
+freelancer price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,freelancer vertical,2,constructed from harvested roots,CONSTRUCTED
+freelancer quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,freelancer vertical,2,constructed from harvested roots,CONSTRUCTED
+freelancer client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,freelancer vertical,2,constructed from harvested roots,CONSTRUCTED
+freelancer booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,freelancer vertical,2,constructed from harvested roots,CONSTRUCTED
+consultant bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,consultant vertical,3,constructed from harvested roots,CONSTRUCTED
+consultant income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,consultant vertical,3,constructed from harvested roots,CONSTRUCTED
+consultant expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,consultant vertical,3,constructed from harvested roots,CONSTRUCTED
+consultant invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,consultant vertical,3,constructed from harvested roots,CONSTRUCTED
+consultant price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,consultant vertical,3,constructed from harvested roots,CONSTRUCTED
+consultant quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,consultant vertical,3,constructed from harvested roots,CONSTRUCTED
+consultant client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,consultant vertical,3,constructed from harvested roots,CONSTRUCTED
+cake business bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,cake business vertical,3,constructed from harvested roots,CONSTRUCTED
+cake business income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,cake business vertical,3,constructed from harvested roots,CONSTRUCTED
+cake business expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,cake business vertical,3,constructed from harvested roots,CONSTRUCTED
+cake business invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cake business vertical,3,constructed from harvested roots,CONSTRUCTED
+cake business price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cake business vertical,3,constructed from harvested roots,CONSTRUCTED
+cake business quote template,NICHE,buyer,UNKNOWN,UNKNOWN,7,cake business vertical,3,constructed from harvested roots,CONSTRUCTED
+cake business client tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,cake business vertical,3,constructed from harvested roots,CONSTRUCTED
+cake business booking tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,cake business vertical,3,constructed from harvested roots,CONSTRUCTED
+candle business bookkeeping spreadsheet,NICHE,buyer,UNKNOWN,UNKNOWN,8,candle business vertical,3,constructed from harvested roots,CONSTRUCTED
+candle business income tracker,NICHE,buyer,UNKNOWN,UNKNOWN,8,candle business vertical,3,constructed from harvested roots,CONSTRUCTED
+candle business expense tracker,NICHE,buyer,UNKNOWN,UNKNOWN,7,candle business vertical,3,constructed from harvested roots,CONSTRUCTED
+candle business invoice template,NICHE,buyer,UNKNOWN,UNKNOWN,7,candle business vertical,3,constructed from harvested roots,CONSTRUCTED
+candle business price list template,NICHE,buyer,UNKNOWN,UNKNOWN,7,candle business vertical,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+expense tracker uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+income and expense spreadsheet uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+self assessment tracker uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+tax spreadsheet uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+mileage log uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+invoice template uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+profit and loss template uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+vat spreadsheet uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+cash flow spreadsheet uk,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+expense tracker uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+income and expense spreadsheet uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+self assessment tracker uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+tax spreadsheet uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+mileage log uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+invoice template uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+profit and loss template uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+vat spreadsheet uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+cash flow spreadsheet uk hmrc,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+expense tracker uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+income and expense spreadsheet uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+self assessment tracker uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+tax spreadsheet uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+mileage log uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+invoice template uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+profit and loss template uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+vat spreadsheet uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+cash flow spreadsheet uk tax year 2026 27,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+expense tracker uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+income and expense spreadsheet uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+self assessment tracker uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+tax spreadsheet uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+mileage log uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+invoice template uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+profit and loss template uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+vat spreadsheet uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+cash flow spreadsheet uk self employed,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+expense tracker uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+income and expense spreadsheet uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+self assessment tracker uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,1,constructed from harvested roots,CONSTRUCTED
+tax spreadsheet uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+mileage log uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+invoice template uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+profit and loss template uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+vat spreadsheet uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+cash flow spreadsheet uk small business,PROFESSIONAL,buyer,UNKNOWN,seasonal jan/apr,9,UK finance line,2,constructed from harvested roots,CONSTRUCTED
+how to track business expenses,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+keep track of invoices,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+tax return help self employed,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+what can i claim self employed,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+making tax digital records,PROBLEM,problem,UNKNOWN,rising,8,finance line / reseller line,1,constructed from harvested roots,CONSTRUCTED
+mtd spreadsheet,PROBLEM,problem,UNKNOWN,rising,8,finance line / reseller line,1,constructed from harvested roots,CONSTRUCTED
+making tax digital sole trader,PROBLEM,problem,UNKNOWN,rising,8,finance line / reseller line,1,constructed from harvested roots,CONSTRUCTED
+quarterly tax records uk,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+money owed tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+unpaid invoice tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+job tracker for small business,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+who owes me money spreadsheet,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+track rent payments,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+tenant rent tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+follow up tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+sales follow up template,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+cold call tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+commission tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+commission calculator,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+freelance income tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+second income tax tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+side hustle income spreadsheet,PROBLEM,problem,UNKNOWN,rising,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+hmrc side hustle tax,PROBLEM,problem,UNKNOWN,rising,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+vinted seller tracker,PROBLEM,problem,UNKNOWN,rising,8,finance line / reseller line,1,constructed from harvested roots,CONSTRUCTED
+ebay reseller spreadsheet,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+depop sales tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+reseller inventory spreadsheet,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+airbnb income spreadsheet,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+holiday let spreadsheet uk,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+uber driver mileage log,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+courier income tracker,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+delivery driver tax spreadsheet,PROBLEM,problem,UNKNOWN,UNKNOWN,8,finance line / reseller line,2,constructed from harvested roots,CONSTRUCTED
+automated bookkeeping spreadsheet,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+bookkeeping with dashboard,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+accounts spreadsheet with tax estimate,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+spreadsheet with locked formulas,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+easy bookkeeping for beginners,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+simple accounts template,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+accountant ready bookkeeping,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+profit dashboard spreadsheet,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+business dashboard template,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+all in one business spreadsheet,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+business in a box template,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+small business starter kit,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+quote and invoice bundle,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+client management spreadsheet,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+simple crm google sheets,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+sales dashboard google sheets,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+pipeline tracker google sheets,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+follow up system spreadsheet,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+pricing calculator small business,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+hourly rate calculator,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+day rate calculator uk,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+job costing spreadsheet,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+cake pricing calculator,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+candle pricing calculator,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+craft pricing calculator,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+product pricing spreadsheet,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+service pricing calculator,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+cash flow forecast template,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+profit first spreadsheet,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+tax set aside calculator,SOLUTION,buyer,UNKNOWN,UNKNOWN,8,core + calculators,2,constructed from harvested roots,CONSTRUCTED
+bookkeeping google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+expense tracker google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+expense tracker excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+expense tracker template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+expense tracker template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+expense tracker digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+expense tracker instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+crm google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+crm excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+crm template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+crm template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+crm digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+crm instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+lead tracker google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+lead tracker excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+lead tracker template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+lead tracker template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+lead tracker digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+lead tracker instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+invoice google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+invoice excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+invoice template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+invoice template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+invoice digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+invoice instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+landlord tracker google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+landlord tracker excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+landlord tracker template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+landlord tracker template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+landlord tracker digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+landlord tracker instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+self assessment google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+self assessment excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+self assessment template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+self assessment template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+self assessment digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+self assessment instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+price list google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+price list excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+price list template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+price list template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+price list digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+price list instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+sales tracker google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+sales tracker excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+sales tracker template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+sales tracker template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+sales tracker digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+sales tracker instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+client database google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+client database excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+client database template google sheets,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+client database template excel,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+client database digital download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+client database instant download,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,format variants,3,constructed from harvested roots,CONSTRUCTED
+tax year 2026 27 spreadsheet,SEASONAL,buyer,UNKNOWN,rising apr,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+2026 27 bookkeeping template,SEASONAL,buyer,UNKNOWN,rising apr,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+self assessment 2025 26,SEASONAL,buyer,UNKNOWN,seasonal jan,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+january tax return help,SEASONAL,buyer,UNKNOWN,seasonal jan,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+new tax year planner,SEASONAL,buyer,UNKNOWN,seasonal apr,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+year end accounts template,SEASONAL,buyer,UNKNOWN,seasonal,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+2027 budget spreadsheet,SEASONAL,buyer,UNKNOWN,seasonal dec-jan,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+new business checklist 2026,SEASONAL,buyer,UNKNOWN,seasonal jan,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+black friday tracker small business,SEASONAL,buyer,UNKNOWN,seasonal nov,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+christmas market seller spreadsheet,SEASONAL,buyer,UNKNOWN,seasonal oct-dec,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+wedding season pricing guide,SEASONAL,buyer,UNKNOWN,seasonal spring,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+end of tax year checklist uk,SEASONAL,buyer,UNKNOWN,seasonal mar-apr,7,seasonal editions,2,constructed from harvested roots,CONSTRUCTED
+new business gift,GIFT,gift,UNKNOWN,UNKNOWN,4,bundles as gifts,4,constructed from harvested roots,CONSTRUCTED
+gift for new business owner,GIFT,gift,UNKNOWN,UNKNOWN,4,bundles as gifts,4,constructed from harvested roots,CONSTRUCTED
+small business owner gift,GIFT,gift,UNKNOWN,UNKNOWN,4,bundles as gifts,4,constructed from harvested roots,CONSTRUCTED
+gift for freelancer,GIFT,gift,UNKNOWN,UNKNOWN,4,bundles as gifts,4,constructed from harvested roots,CONSTRUCTED
+gift for landlord,GIFT,gift,UNKNOWN,UNKNOWN,4,bundles as gifts,4,constructed from harvested roots,CONSTRUCTED
+new cleaner business gift,GIFT,gift,UNKNOWN,UNKNOWN,4,bundles as gifts,4,constructed from harvested roots,CONSTRUCTED
+self employed gift ideas,GIFT,gift,UNKNOWN,UNKNOWN,4,bundles as gifts,4,constructed from harvested roots,CONSTRUCTED
+entrepreneur gift digital,GIFT,gift,UNKNOWN,UNKNOWN,4,bundles as gifts,4,constructed from harvested roots,CONSTRUCTED
+starting a cleaning business,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+starting a gardening business,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+starting a dog grooming business,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+going self employed checklist,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+first year self employed,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+new landlord checklist,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+registering as sole trader,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+leaving employment to freelance,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+new freelancer kit,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+first client onboarding,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+scaling a side hustle,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+going full time on etsy,OCCASION,problem,UNKNOWN,UNKNOWN,7,starter kits,2,constructed from harvested roots,CONSTRUCTED
+recruiter candidate tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+recruitment agency spreadsheet,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+estate agent lead tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+mortgage broker client tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+insurance agent lead tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+network marketing tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+sdr activity tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+sales activity tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+b2b lead list template,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+outreach tracker spreadsheet,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+linkedin outreach tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+networking follow up tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+small agency client tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+social media manager client tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+bookkeeper client tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+accountant workflow spreadsheet,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+hr tracker small business,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+employee holiday tracker uk,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+rota template small business,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+timesheet template uk,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+staff hours tracker,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,2,constructed from harvested roots,CONSTRUCTED
+supplier comparison spreadsheet,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+purchase order template small business,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+stock control spreadsheet,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+inventory spreadsheet small business,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+ecommerce profit calculator,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+amazon seller spreadsheet uk,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+etsy fee calculator spreadsheet,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+etsy pricing calculator,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+product cost calculator,PROFESSIONAL,buyer,UNKNOWN,UNKNOWN,7,sales/ops line,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet for small business uk,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet for self employed,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet for freelancers,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet for sole traders,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet easy to use,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet with video instructions,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet beginner friendly,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
+bookkeeping spreadsheet with dashboard,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
+crm spreadsheet for small business uk,LONG TAIL,buyer,UNKNOWN,UNKNOWN,7,copy/tags,3,constructed from harvested roots,CONSTRUCTED
