@@ -188,7 +188,14 @@ def _collect_page(domain, fetcher):
         js = fetcher.fetch(f"https://www.googletagmanager.com/gtm.js?id={gid}")
         if js and js.body:
             texts.append((f"GTM {gid}", js.body))
-    return {"texts": texts, "headers": result.headers}
+
+    # The page channel matches URLs only. A cookie-consent banner listing
+    # "Hotjar, Mixpanel, Klaviyo" in prose, or a blog post about Klarna, must
+    # not count as a detection - a vendor's asset URL loading is evidence, a
+    # mention of its name is not.
+    urls = [(source, " ".join(re.findall(r"https?://[^\s\"'<>\\]+", body.lower())))
+            for source, body in texts]
+    return {"texts": texts, "urls": urls, "headers": result.headers}
 
 
 def _snippet(text, match, width=34):
@@ -223,9 +230,14 @@ def _match(vendors, dns_sig, page_sig):
                     continue
         if page_sig:
             for raw, rx in v.patterns.get("page", []):
+                for source, urls in page_sig["urls"]:
+                    if rx.search(urls):
+                        hit(v, "page", f"{source} loads a URL matching /{raw}/")
+                        break
+            for raw, rx in v.patterns.get("page_text", []):
                 for source, text in page_sig["texts"]:
                     if rx.search(text.lower()):
-                        hit(v, "page", f"{source} matches /{raw}/")
+                        hit(v, "page", f"{source} markup matches /{raw}/")
                         break
             for hname, raw, rx in v.headers:
                 val = page_sig["headers"].get(hname)

@@ -41,9 +41,12 @@ training data - work from evidence:
    hostname, the vendor's docs, or their SPF/DKIM setup guides).
 3. Add the vendor to the right `fingerprints/*.json` file. Patterns are
    lowercase regex matched against lowercased text. Prefer `dns`/`mx`/`ns`
-   signals (confirmed) over `page` (observed). Keep patterns specific
-   enough not to match English prose in HTML - `"gladly\\.com"`, never
-   `"gladly"`.
+   signals (confirmed) over `page` (observed). `page` patterns match only
+   URLs extracted from the page, never prose - cookie banners and blog
+   posts name vendors in text, and a name in prose is not evidence. So a
+   `page` pattern should be a fragment of the vendor's asset URL
+   (`"static\\.hotjar"`, `"cdn\\.yotpo"`). Use `page_text` (raw HTML)
+   only for genuine markup signatures like `"window\\.shopify"`.
 4. Validate, rebundle for the web scanner, and test:
    `python3 -m stackscan validate && python3 -m stackscan bundle && python3 -m unittest`.
 5. Re-scan the domain that surfaced the signal and confirm the vendor now

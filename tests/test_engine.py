@@ -62,10 +62,30 @@ class TestScan(unittest.TestCase):
             self.assertEqual(self.by_name[name].confidence, "observed", name)
 
     def test_gtm_container_expansion(self):
-        # Hotjar is only referenced inside the GTM container, not the page.
+        # Hotjar loads only inside the GTM container; the homepage merely
+        # mentions it in prose, which must not be the source of the hit.
         self.assertIn("Hotjar", self.by_name)
         self.assertTrue(
             any("GTM" in ev for ev in self.by_name["Hotjar"].evidence))
+
+    def test_prose_mentions_are_not_detections(self):
+        # The fixture homepage says "We accept Klarna and Afterpay", reviews
+        # "Mixpanel vs Hotjar", name-drops Trustpilot, and has a cookie
+        # notice listing Tidio and PowerReviews. None of their assets load,
+        # so none of them may be reported - a vendor name in prose is not
+        # evidence. This is the cookie-banner false-positive trap.
+        for decoy in ("Klarna", "Afterpay", "Mixpanel", "Trustpilot",
+                      "Tidio", "PowerReviews"):
+            self.assertNotIn(decoy, self.by_name,
+                             f"{decoy} detected from a prose mention")
+
+    def test_page_text_channel_matches_markup(self):
+        # window.Shopify is inline JS, not a URL - the page_text channel
+        # exists for exactly this signature.
+        self.assertTrue(
+            any("window\\.shopify" in ev
+                for ev in self.by_name["Shopify"].evidence),
+            self.by_name["Shopify"].evidence)
 
     def test_shared_vendor_is_suppressed(self):
         # sparkpostmail.com is in the SPF, but SendGrid (non-shared, same

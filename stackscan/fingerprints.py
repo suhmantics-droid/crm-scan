@@ -3,12 +3,18 @@
 Each JSON file is one category. A vendor is a name plus signal patterns on
 one or more channels:
 
-    dns      regex against SPF strings, CNAME targets and DMARC records
-    mx       regex against the apex MX hosts
-    ns       regex against the apex nameservers
-    page     regex against homepage HTML (and any GTM containers it loads)
-    headers  {header-name: regex} against homepage response headers
-    ip_cidr  CIDR ranges checked against the apex A records
+    dns        regex against SPF strings, CNAME targets and DMARC records
+    mx         regex against the apex MX hosts
+    ns         regex against the apex nameservers
+    page       regex against URLs extracted from the homepage (script srcs,
+               links, loader snippets) and any GTM containers it loads.
+               URL-only on purpose: cookie-consent banners and blog posts
+               mention vendor NAMES in prose ("we accept Klarna"), and a
+               name in prose is not evidence. A vendor's asset URL is.
+    page_text  regex against the raw HTML, for the few signatures that are
+               markup rather than a URL (window.Shopify). Use sparingly.
+    headers    {header-name: regex} against homepage response headers
+    ip_cidr    CIDR ranges checked against the apex A records
 
 Patterns are matched against lowercased text; write them lowercase. dns/mx/
 ns/headers/ip hits are 'confirmed' (infrastructure the vendor had to be
@@ -24,7 +30,7 @@ import json
 import re
 from pathlib import Path
 
-CHANNELS = ("dns", "mx", "ns", "page")
+CHANNELS = ("dns", "mx", "ns", "page", "page_text")
 VENDOR_KEYS = set(CHANNELS) | {"name", "headers", "ip_cidr", "shared", "notes"}
 
 DEFAULT_DB_DIR = Path(__file__).resolve().parent.parent / "fingerprints"

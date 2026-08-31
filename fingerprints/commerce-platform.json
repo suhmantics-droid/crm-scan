@@ -6,7 +6,8 @@
     {
       "name": "Shopify",
       "dns": ["myshopify", "shopify"],
-      "page": ["cdn\\.shopify", "/cdn/shop/", "window\\.shopify"],
+      "page": ["cdn\\.shopify", "/cdn/shop/"],
+      "page_text": ["window\\.shopify"],
       "headers": {"powered-by": "shopify", "x-shopid": "\\d", "x-shopify-stage": ".+"},
       "ip_cidr": ["23.227.32.0/19"],
       "notes": "Published IP range catches stores whose homepage is walled off."
@@ -18,7 +19,8 @@
     },
     {
       "name": "Adobe Commerce (Magento)",
-      "page": ["magento", "mage/requirejs"]
+      "page": ["magento"],
+      "page_text": ["mage/requirejs"]
     },
     {
       "name": "BigCommerce",

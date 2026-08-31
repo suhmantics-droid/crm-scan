@@ -14,7 +14,9 @@
      ],
      "page": [
       "cdn\\.shopify",
-      "/cdn/shop/",
+      "/cdn/shop/"
+     ],
+     "page_text": [
       "window\\.shopify"
      ],
      "headers": {
@@ -40,7 +42,9 @@
     {
      "name": "Adobe Commerce (Magento)",
      "page": [
-      "magento",
+      "magento"
+     ],
+     "page_text": [
       "mage/requirejs"
      ]
     },
