@@ -1,0 +1,17 @@
+{
+  "category": "payments",
+  "label": "Payments & checkout",
+  "order": 40,
+  "vendors": [
+    {"name": "Stripe", "page": ["js\\.stripe\\.com", "m\\.stripe\\.network"]},
+    {"name": "Braintree", "page": ["braintreegateway", "braintree-api"]},
+    {"name": "Adyen", "page": ["checkoutshopper", "adyen\\.com"]},
+    {"name": "PayPal", "page": ["paypal\\.com/sdk", "paypalobjects"]},
+    {"name": "Square", "page": ["squarecdn", "squareup\\.com"]},
+    {"name": "Klarna", "page": ["klarna"]},
+    {"name": "Afterpay", "page": ["afterpay", "clearpay"]},
+    {"name": "Affirm", "page": ["affirm\\.com/js", "cdn1\\.affirm"]},
+    {"name": "Recharge", "page": ["rechargepayments", "rechargecdn", "rechargeapps"]},
+    {"name": "Bolt", "page": ["connect\\.bolt\\.com"]}
+  ]
+}

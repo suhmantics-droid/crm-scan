@@ -1,0 +1,13 @@
+{
+  "TXT:acmeoutfitters.example": ["v=spf1 include:_spf.google.com include:sendgrid.net ~all"],
+  "TXT:email.acmeoutfitters.example": ["v=spf1 include:_spf.klaviyo.com include:sparkpostmail.com ~all"],
+  "TXT:_dmarc.acmeoutfitters.example": ["v=DMARC1; p=none; rua=mailto:acme@rua.easydmarc.us"],
+  "MX:acmeoutfitters.example": ["aspmx.l.google.com"],
+  "NS:acmeoutfitters.example": ["chase.ns.cloudflare.com", "vida.ns.cloudflare.com"],
+  "A:acmeoutfitters.example": ["23.227.38.74"],
+  "CNAME:k1._domainkey.acmeoutfitters.example": ["dkim.mcsv.net"],
+  "CNAME:help.acmeoutfitters.example": ["acme.zendesk.com"],
+  "CNAME:careers.acmeoutfitters.example": ["boards.greenhouse.io"],
+  "CNAME:status.acmeoutfitters.example": ["acme.mysterystatus-example.net"],
+  "TXT:_spf.klaviyo.com": ["v=spf1 ip4:198.51.100.0/24 ~all"]
+}

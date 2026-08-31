@@ -1,0 +1,7 @@
+{
+  "https://www.decoycorp.example": {
+    "status": 200,
+    "headers": {},
+    "body": "<html><head><script src=\"https://cdn.sundrip.com/w.js\"></script><script src=\"https://static.concordial.example.net/t.js\"></script></head><body>Decoy Corp</body></html>"
+  }
+}

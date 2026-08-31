@@ -1,0 +1,12 @@
+{
+  "https://www.acmeoutfitters.example": {
+    "status": 200,
+    "headers": {"server": "cloudflare", "powered-by": "Shopify"},
+    "body": "<html><head><script src=\"https://js.stripe.com/v3/\"></script><script src=\"https://cdn.shopify.com/s/files/theme.js\"></script><script src=\"https://sdk.loyaltylion.net/loyaltylion.js\"></script><script src=\"https://widget.newloyaltything.example/w.js\"></script><script src=\"https://www.googletagmanager.com/gtm.js?id=GTM-ABC123\"></script><script>var s = window.Shopify;</script></head><body>Acme Outfitters. We accept Klarna and Afterpay at checkout. Read our blog post: Mixpanel vs Hotjar for ecommerce. Rated excellent on Trustpilot. Cookie notice: this site may set cookies from partners including Tidio and PowerReviews.</body></html>"
+  },
+  "https://www.googletagmanager.com/gtm.js?id=GTM-ABC123": {
+    "status": 200,
+    "headers": {},
+    "body": "// container\nvar u='https://static.hotjar.com/c/hotjar-1.js';"
+  }
+}
