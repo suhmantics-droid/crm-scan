@@ -26,6 +26,19 @@ DNS goes over DNS-over-HTTPS (Cloudflare, then Google), so scans work
 wherever HTTPS works. In sandboxes that block those hosts, only the
 offline fixture mode is testable: `--fixtures tests/fixtures/acme`.
 
+## Measuring precision (do this before trusting any change)
+
+```bash
+python3 -m stackscan benchmark --truth known-stacks.csv
+```
+
+The truth CSV has `Domain,Vendors` columns; Vendors is semicolon-separated
+and a `!` prefix marks a vendor known to be ABSENT (detecting it is a hard
+false positive and fails the run). Detected vendors not listed are printed
+as unverified extras for a human to judge - each one is either a win or a
+fingerprint bug, never ignorable. Grow the truth file every time a human
+verifies a scan; it is the scanner's report card.
+
 Output confidence: an unmarked vendor is **confirmed** (DNS/MX/NS/header/IP
 - infrastructure the vendor had to be authorized into). A `~` suffix means
 **observed** on the page only - JS tags can linger after a vendor is churned.

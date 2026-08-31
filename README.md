@@ -21,6 +21,7 @@ crm-scan answers one question: which ESP does this brand run. The same public si
 python3 -m stackscan scan gymshark.com --evidence
 python3 -m stackscan scan --input brands.csv --csv results.csv
 python3 -m stackscan validate
+python3 -m stackscan benchmark --truth known-stacks.csv   # precision report card
 ```
 
 What it adds over the original script:

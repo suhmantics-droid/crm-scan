@@ -101,6 +101,75 @@ def cmd_list(args):
         print(f"  {', '.join(names)}")
 
 
+def cmd_benchmark(args):
+    """Score the scanner against domains whose stacks are known.
+
+    The truth CSV has Domain and Vendors columns; Vendors is
+    semicolon-separated. A vendor prefixed with ! is a known ABSENCE
+    (detecting it is a hard false positive). Vendors detected but not
+    listed are reported as unverified extras for a human to judge, not
+    counted as errors - a truth file is rarely exhaustive.
+    """
+    vendors, labels = load_db(args.fingerprints)
+    if args.fixtures:
+        fx = Path(args.fixtures)
+        resolver = FixtureResolver(json.loads((fx / "dns.json").read_text()))
+        fetcher = None if args.dns_only else FixtureFetcher(
+            json.loads((fx / "http.json").read_text()))
+    else:
+        resolver = DohResolver(timeout=args.timeout)
+        fetcher = None if args.dns_only else HttpFetcher(timeout=args.timeout)
+
+    with open(args.truth, newline="", encoding="utf-8-sig") as fh:
+        rows = list(csv.DictReader(fh))
+    if not rows or "Domain" not in rows[0] or "Vendors" not in rows[0]:
+        sys.exit("truth CSV needs Domain and Vendors columns "
+                 "(Vendors semicolon-separated, ! prefix = known absent)")
+
+    hits = misses = violations = 0
+    extras_all = []
+    for row in rows:
+        domain = resolve_brand_domain("", row["Domain"])
+        expected, forbidden = set(), set()
+        for v in row["Vendors"].split(";"):
+            v = v.strip()
+            if not v:
+                continue
+            (forbidden if v.startswith("!") else expected).add(v.lstrip("!"))
+
+        result = scan_domain("", domain, vendors, resolver, fetcher,
+                             workers=args.workers)
+        found = {f.vendor.name: f for f in result.findings}
+
+        for name in sorted(expected):
+            if name in found:
+                hits += 1
+            else:
+                misses += 1
+                print(f"MISS  {domain}: {name} not detected")
+        for name in sorted(forbidden):
+            if name in found:
+                violations += 1
+                ev = "; ".join(found[name].evidence)
+                print(f"FALSE {domain}: {name} detected but known absent ({ev})")
+        extras = sorted(set(found) - expected - forbidden)
+        if extras:
+            extras_all.append(f"  {domain}: {', '.join(extras)}")
+        if args.delay:
+            time.sleep(args.delay)
+
+    total = hits + misses
+    print(f"\nRecall: {hits}/{total} known vendors detected"
+          + (f" ({hits / total:.0%})" if total else ""))
+    print(f"Hard false positives (known-absent detected): {violations}")
+    if extras_all:
+        print("Unverified extras (judge these by hand; each one is either "
+              "a win or a fingerprint bug):")
+        print("\n".join(extras_all))
+    if misses or violations:
+        sys.exit(1)
+
+
 def cmd_bundle(args):
     out = Path(args.out)
     out.write_text(json.dumps(bundle_db(args.fingerprints), indent=1) + "\n",
@@ -148,6 +217,18 @@ def main(argv=None):
                         help="regenerate the web scanner's fingerprint bundle")
     bu.add_argument("--out", default="web/fingerprints.json")
     bu.set_defaults(func=cmd_bundle)
+
+    be = sub.add_parser("benchmark",
+                        help="score the scanner against known-stack domains")
+    be.add_argument("--truth", required=True,
+                    help="CSV with Domain,Vendors (semicolon-separated; "
+                         "! prefix marks a known-absent vendor)")
+    be.add_argument("--dns-only", action="store_true")
+    be.add_argument("--delay", type=float, default=0)
+    be.add_argument("--workers", type=int, default=12)
+    be.add_argument("--timeout", type=int, default=15)
+    be.add_argument("--fixtures", help="offline mode (for tests)")
+    be.set_defaults(func=cmd_benchmark)
 
     args = ap.parse_args(argv)
     if args.command == "scan" and not args.domains and not args.input:
